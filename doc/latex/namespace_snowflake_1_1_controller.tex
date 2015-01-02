@@ -4,15 +4,25 @@
 \begin{DoxyCompactItemize}
 \item 
 interface \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition}{I\+Controller\+Definition}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input} \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{Snowflake.\+Controller.\+I\+Controller\+Input} \end{DoxyCompactList}\item 
 interface \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents a single input on the controller. The recommended naming convention for Controller\+Inputs are For Buttons and Triggers\+: B\+T\+N\+\_\+ For D\+Pad\+: B\+T\+N\+\_\+\+D\+P\+A\+D\+\_\+ For movement of analog sticks, motion tracking and joysticks\+: A\+N\+A\+L\+O\+G\+\_\+ \end{DoxyCompactList}\item 
 interface \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_ports_database}{I\+Controller\+Ports\+Database}
-\item 
+\begin{DoxyCompactList}\small\item\em This database stores which type of controller is to be used on which port. \hyperlink{namespace_snowflake}{Snowflake} supports up to 8 ports. It is recommended that when compiling controller profiles, the port number should indicate the slot of the controller profile to be used. Each port should correspond to a physical controller port on the console. Thus, player 1 should use the profile in slot 1 of the controller in port 1 Snowflake.\+Controller.\+I\+Controller\+Database \end{DoxyCompactList}\item 
 interface \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{I\+Controller\+Profile}
-\item 
+\begin{DoxyCompactList}\small\item\em Represents a mapping from the controller definition to the gamepad or keyboard. Snowflake.\+Emulator.\+Input.\+Keyboard\+Mapping For \hyperlink{namespace_snowflake}{Snowflake}\textquotesingle{}s keyboard abstraction. \begin{DoxySeeAlso}{See also}
+Snowflake.\+Emulator.\+Input.\+Gamepad\+Mapping
+
+
+\end{DoxySeeAlso}
+For \hyperlink{namespace_snowflake}{Snowflake}\textquotesingle{}s gamepad abstracion. \end{DoxyCompactList}\item 
 interface \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database}{I\+Controller\+Profile\+Database}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A database that holds the controller profile data for a certain slot. The database supports 1 to 8 slots or \textquotesingle{}controller\+Index\textquotesingle{}, \hyperlink{namespace_snowflake}{Snowflake} can only store up to 8 profiles for a controller. Every controller profile I\+D has their own table with all the inputs as a column prefixes with \textquotesingle{}I\+N\+P\+U\+T\+\_\+\textquotesingle{}. Profiles can be accessed once stored by the Controller\+I\+D of the controller definition the profile has mapped to, and the slot number. \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{Snowflake.\+Controller.\+I\+Controller\+Profile} \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition}{Snowflake.\+Controller.\+I\+Controller\+Definition}
+
+
+\end{DoxySeeAlso}
+\end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 

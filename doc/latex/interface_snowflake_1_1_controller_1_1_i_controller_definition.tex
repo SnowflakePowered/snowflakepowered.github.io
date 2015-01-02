@@ -1,14 +1,39 @@
 \hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_definition}{}\section{Snowflake.\+Controller.\+I\+Controller\+Definition Interface Reference}
 \label{interface_snowflake_1_1_controller_1_1_i_controller_definition}\index{Snowflake.\+Controller.\+I\+Controller\+Definition@{Snowflake.\+Controller.\+I\+Controller\+Definition}}
+
+
+Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input} \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{Snowflake.\+Controller.\+I\+Controller\+Input}  
+
+
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_definition_a91b1721244d428e39c1833bd82a7c420}{}string {\bfseries Controller\+I\+D}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\label{interface_snowflake_1_1_controller_1_1_i_controller_definition_a91b1721244d428e39c1833bd82a7c420}
+string \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition_a91b1721244d428e39c1833bd82a7c420}{Controller\+I\+D}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The I\+D of the controller This I\+D is used to reference this controller definition \end{DoxyCompactList}\item 
+I\+Read\+Only\+Dictionary$<$ string, \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input} $>$ \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition_a3d0737e0a8d939836e8c453c8f6625aa}{Controller\+Inputs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em A dictionary of inputs that comprise the controller. Inputs are stored with the input name as the key. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_definition_a3d0737e0a8d939836e8c453c8f6625aa}{}I\+Read\+Only\+Dictionary$<$ string, \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input} $>$ {\bfseries Controller\+Inputs}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\label{interface_snowflake_1_1_controller_1_1_i_controller_definition_a3d0737e0a8d939836e8c453c8f6625aa}
 
-\end{DoxyCompactItemize}
+\subsection{Detailed Description}
+Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{I\+Controller\+Input} \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_input}{Snowflake.\+Controller.\+I\+Controller\+Input} 
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_definition_a91b1721244d428e39c1833bd82a7c420}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition@{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition}!Controller\+I\+D@{Controller\+I\+D}}
+\index{Controller\+I\+D@{Controller\+I\+D}!Snowflake\+::\+Controller\+::\+I\+Controller\+Definition@{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition}}
+\subsubsection[{Controller\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}string Snowflake.\+Controller.\+I\+Controller\+Definition.\+Controller\+I\+D\hspace{0.3cm}{\ttfamily [get]}}\label{interface_snowflake_1_1_controller_1_1_i_controller_definition_a91b1721244d428e39c1833bd82a7c420}
+
+
+The I\+D of the controller This I\+D is used to reference this controller definition 
+
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_definition_a3d0737e0a8d939836e8c453c8f6625aa}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition@{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition}!Controller\+Inputs@{Controller\+Inputs}}
+\index{Controller\+Inputs@{Controller\+Inputs}!Snowflake\+::\+Controller\+::\+I\+Controller\+Definition@{Snowflake\+::\+Controller\+::\+I\+Controller\+Definition}}
+\subsubsection[{Controller\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}I\+Read\+Only\+Dictionary$<$string, {\bf I\+Controller\+Input}$>$ Snowflake.\+Controller.\+I\+Controller\+Definition.\+Controller\+Inputs\hspace{0.3cm}{\ttfamily [get]}}\label{interface_snowflake_1_1_controller_1_1_i_controller_definition_a3d0737e0a8d939836e8c453c8f6625aa}
+
+
+A dictionary of inputs that comprise the controller. Inputs are stored with the input name as the key. 
+
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

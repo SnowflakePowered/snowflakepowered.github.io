@@ -98,25 +98,206 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_controller_1_1
 <div class="title">Snowflake.Controller.IControllerProfileDatabase Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A database that holds the controller profile data for a certain slot. The database supports 1 to 8 slots or 'controllerIndex', <a class="el" href="namespace_snowflake.html">Snowflake</a> can only store up to 8 profiles for a controller. Every controller profile ID has their own table with all the inputs as a column prefixes with 'INPUT_'. Profiles can be accessed once stored by the ControllerID of the controller definition the profile has mapped to, and the slot number. <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html" title="Represents a mapping from the controller definition to the gamepad or keyboard. Snowflake.Emulator.Input.KeyboardMapping For Snowflake&#39;s keyboard abstraction. Snowflake.Emulator.Input.GamepadMappingFor Snowflake&#39;s gamepad abstracion. ">Snowflake.Controller.IControllerProfile</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html" title="Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as IContr...">Snowflake.Controller.IControllerDefinition</a></dd></dl>
+ 
+ <a href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac468d872335c4cdbedaffa5e942654ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac468d872335c4cdbedaffa5e942654ee"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddControllerProfile</b> (<a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a> controllerProfile, int controllerIndex)</td></tr>
+<tr class="memitem:ac468d872335c4cdbedaffa5e942654ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#ac468d872335c4cdbedaffa5e942654ee">AddControllerProfile</a> (<a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a> controllerProfile, int controllerIndex)</td></tr>
+<tr class="memdesc:ac468d872335c4cdbedaffa5e942654ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add or update controller profile to the database.  <a href="#ac468d872335c4cdbedaffa5e942654ee">More...</a><br /></td></tr>
 <tr class="separator:ac468d872335c4cdbedaffa5e942654ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e6de30f211c2de303f9c5944ce01969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6de30f211c2de303f9c5944ce01969"></a>
-<a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetControllerProfile</b> (string controllerId, int controllerIndex)</td></tr>
+<tr class="memitem:a1e6de30f211c2de303f9c5944ce01969"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#a1e6de30f211c2de303f9c5944ce01969">GetControllerProfile</a> (string controllerId, int controllerIndex)</td></tr>
+<tr class="memdesc:a1e6de30f211c2de303f9c5944ce01969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the profile for a certain controller definition in a certain slot.  <a href="#a1e6de30f211c2de303f9c5944ce01969">More...</a><br /></td></tr>
 <tr class="separator:a1e6de30f211c2de303f9c5944ce01969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe919ad0989f8404b347ae1baa1119f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe919ad0989f8404b347ae1baa1119f3"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeviceName</b> (string controllerId, int controllerIndex)</td></tr>
-<tr class="separator:abe919ad0989f8404b347ae1baa1119f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0056d73bdaa49c3d8e40f6ea987ed6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0056d73bdaa49c3d8e40f6ea987ed6e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>LoadTables</b> (System.Collections.Generic.IDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> &gt; platforms)</td></tr>
-<tr class="separator:ac0056d73bdaa49c3d8e40f6ea987ed6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00da034510f729461b53d7bce4a1bd4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00da034510f729461b53d7bce4a1bd4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeviceName</b> (string controllerId, int controllerIndex, string deviceName)</td></tr>
+<tr class="memitem:a00da034510f729461b53d7bce4a1bd4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#a00da034510f729461b53d7bce4a1bd4e">SetDeviceName</a> (string controllerId, int controllerIndex, string deviceName)</td></tr>
+<tr class="memdesc:a00da034510f729461b53d7bce4a1bd4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the device name for a certain controller profile. Used for custom profiles to map to non XInput gamepads. todo: An alternate solution should be used on non-Windows environments. Snowflake.Controller.ControllerProfileType.CUSTOM_PROFILE  <a href="#a00da034510f729461b53d7bce4a1bd4e">More...</a><br /></td></tr>
 <tr class="separator:a00da034510f729461b53d7bce4a1bd4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe919ad0989f8404b347ae1baa1119f3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#abe919ad0989f8404b347ae1baa1119f3">GetDeviceName</a> (string controllerId, int controllerIndex)</td></tr>
+<tr class="memdesc:abe919ad0989f8404b347ae1baa1119f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the device name that corresponds to a profile. Used for custom profiles to map to non XInput gamepads. todo: An alternate solution should be used on non-Windows environments. Snowflake.Controller.ControllerProfileType.CUSTOM_PROFILE  <a href="#abe919ad0989f8404b347ae1baa1119f3">More...</a><br /></td></tr>
+<tr class="separator:abe919ad0989f8404b347ae1baa1119f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4269ef2c717d4e75d0ab376a6435eef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#a4269ef2c717d4e75d0ab376a6435eef8">LoadTables</a> (IDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> &gt; platforms)</td></tr>
+<tr class="memdesc:a4269ef2c717d4e75d0ab376a6435eef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load (create) tables for every registered controller for all loaded platforms.  <a href="#a4269ef2c717d4e75d0ab376a6435eef8">More...</a><br /></td></tr>
+<tr class="separator:a4269ef2c717d4e75d0ab376a6435eef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A database that holds the controller profile data for a certain slot. The database supports 1 to 8 slots or 'controllerIndex', <a class="el" href="namespace_snowflake.html">Snowflake</a> can only store up to 8 profiles for a controller. Every controller profile ID has their own table with all the inputs as a column prefixes with 'INPUT_'. Profiles can be accessed once stored by the ControllerID of the controller definition the profile has mapped to, and the slot number. <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html" title="Represents a mapping from the controller definition to the gamepad or keyboard. Snowflake.Emulator.Input.KeyboardMapping For Snowflake&#39;s keyboard abstraction. Snowflake.Emulator.Input.GamepadMappingFor Snowflake&#39;s gamepad abstracion. ">Snowflake.Controller.IControllerProfile</a> </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html" title="Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as IContr...">Snowflake.Controller.IControllerDefinition</a></dd></dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac468d872335c4cdbedaffa5e942654ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Controller.IControllerProfileDatabase.AddControllerProfile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a>&#160;</td>
+          <td class="paramname"><em>controllerProfile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controllerIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add or update controller profile to the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controllerProfile</td><td>The controller profile</td></tr>
+    <tr><td class="paramname">controllerIndex</td><td>The slot in which to store the profile</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e6de30f211c2de303f9c5944ce01969"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a> Snowflake.Controller.IControllerProfileDatabase.GetControllerProfile </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>controllerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controllerIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the profile for a certain controller definition in a certain slot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controllerId</td><td>The controller ID for the ControllerDefinition that the profile corresponds to</td></tr>
+    <tr><td class="paramname">controllerIndex</td><td>The slot in which the profile is stored</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe919ad0989f8404b347ae1baa1119f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Controller.IControllerProfileDatabase.GetDeviceName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>controllerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controllerIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the device name that corresponds to a profile. Used for custom profiles to map to non XInput gamepads. todo: An alternate solution should be used on non-Windows environments. Snowflake.Controller.ControllerProfileType.CUSTOM_PROFILE </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controllerId</td><td>The controller ID of the controller profile</td></tr>
+    <tr><td class="paramname">controllerIndex</td><td>The slot where the profile is stored</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Device name if one is set, null if controller is not type of CUSTOM_PROFILE</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4269ef2c717d4e75d0ab376a6435eef8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Controller.IControllerProfileDatabase.LoadTables </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> &gt;&#160;</td>
+          <td class="paramname"><em>platforms</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load (create) tables for every registered controller for all loaded platforms. </p>
+<dl class="section see"><dt>See also</dt><dd>Snowflake.Service.ICoreService.LoadedPlatforms</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">platforms</td><td>Loaded platforms</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a00da034510f729461b53d7bce4a1bd4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Controller.IControllerProfileDatabase.SetDeviceName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>controllerId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>controllerIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>deviceName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the device name for a certain controller profile. Used for custom profiles to map to non XInput gamepads. todo: An alternate solution should be used on non-Windows environments. Snowflake.Controller.ControllerProfileType.CUSTOM_PROFILE </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">controllerId</td><td>The controller ID of the controller profile</td></tr>
+    <tr><td class="paramname">controllerIndex</td><td>The slot where the profile is stored</td></tr>
+    <tr><td class="paramname">deviceName</td><td>The device name that the profile corresponds to</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Controller/IControllerDatabase.cs</li>
 </ul>
@@ -126,7 +307,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDeviceName</b> (st
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_controller.html">Controller</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html">IControllerProfileDatabase</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

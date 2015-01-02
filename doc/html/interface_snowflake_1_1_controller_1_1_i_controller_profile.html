@@ -99,28 +99,143 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_controller_1_1
 <div class="title">Snowflake.Controller.IControllerProfile Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a mapping from the controller definition to the gamepad or keyboard. Snowflake.Emulator.Input.KeyboardMapping For <a class="el" href="namespace_snowflake.html">Snowflake</a>'s keyboard abstraction. </p><dl class="section see"><dt>See also</dt><dd>Snowflake.Emulator.Input.GamepadMapping</dd></dl>
+<p>For <a class="el" href="namespace_snowflake.html">Snowflake</a>'s gamepad abstracion.  
+ <a href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41a6f6f8c58ec249821ef77e58c5d718"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41a6f6f8c58ec249821ef77e58c5d718"></a>
-IDictionary&lt; string, dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToSerializable</b> ()</td></tr>
+<tr class="memitem:a41a6f6f8c58ec249821ef77e58c5d718"><td class="memItemLeft" align="right" valign="top">IDictionary&lt; string, dynamic &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a41a6f6f8c58ec249821ef77e58c5d718">ToSerializable</a> ()</td></tr>
+<tr class="memdesc:a41a6f6f8c58ec249821ef77e58c5d718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates an IDictionary that can be serialized to json or yaml  <a href="#a41a6f6f8c58ec249821ef77e58c5d718">More...</a><br /></td></tr>
 <tr class="separator:a41a6f6f8c58ec249821ef77e58c5d718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a092d06272423ca9603f422361c796991"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a092d06272423ca9603f422361c796991"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerID</b><code> [get]</code></td></tr>
+<tr class="memitem:a092d06272423ca9603f422361c796991"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a092d06272423ca9603f422361c796991">ControllerID</a><code> [get]</code></td></tr>
+<tr class="memdesc:a092d06272423ca9603f422361c796991"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the controller definition in which this profile is for.  <a href="#a092d06272423ca9603f422361c796991">More...</a><br /></td></tr>
 <tr class="separator:a092d06272423ca9603f422361c796991"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4099e38a03cdd075a368d169ccbe6b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4099e38a03cdd075a368d169ccbe6b4"></a>
-IReadOnlyDictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>InputConfiguration</b><code> [get]</code></td></tr>
+<tr class="memitem:ab4099e38a03cdd075a368d169ccbe6b4"><td class="memItemLeft" align="right" valign="top">IReadOnlyDictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#ab4099e38a03cdd075a368d169ccbe6b4">InputConfiguration</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab4099e38a03cdd075a368d169ccbe6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The mapping of inputs to keyboard or gamepad. <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">Snowflake.Controller.IControllerInput</a>  <a href="#ab4099e38a03cdd075a368d169ccbe6b4">More...</a><br /></td></tr>
 <tr class="separator:ab4099e38a03cdd075a368d169ccbe6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8427942ab6807a76853f9992488831ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8427942ab6807a76853f9992488831ff"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformID</b><code> [get]</code></td></tr>
+<tr class="memitem:a8427942ab6807a76853f9992488831ff"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a8427942ab6807a76853f9992488831ff">PlatformID</a><code> [get]</code></td></tr>
+<tr class="memdesc:a8427942ab6807a76853f9992488831ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the platform this controller profile is for. [code review needed] (is this redundant?)  <a href="#a8427942ab6807a76853f9992488831ff">More...</a><br /></td></tr>
 <tr class="separator:a8427942ab6807a76853f9992488831ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4822ec076ec75e9895714a87231e3a6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4822ec076ec75e9895714a87231e3a6c"></a>
-<a class="el" href="namespace_snowflake_1_1_controller.html#af6896d98053b4f8f2d42c32c6fb05c96">ControllerProfileType</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ProfileType</b><code> [get]</code></td></tr>
+<tr class="memitem:a4822ec076ec75e9895714a87231e3a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_snowflake_1_1_controller.html#af6896d98053b4f8f2d42c32c6fb05c96">ControllerProfileType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a4822ec076ec75e9895714a87231e3a6c">ProfileType</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4822ec076ec75e9895714a87231e3a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this profile is for a gamepad, keyboard, or unhandled (custom)  <a href="#a4822ec076ec75e9895714a87231e3a6c">More...</a><br /></td></tr>
 <tr class="separator:a4822ec076ec75e9895714a87231e3a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a mapping from the controller definition to the gamepad or keyboard. Snowflake.Emulator.Input.KeyboardMapping For <a class="el" href="namespace_snowflake.html">Snowflake</a>'s keyboard abstraction. </p><dl class="section see"><dt>See also</dt><dd>Snowflake.Emulator.Input.GamepadMapping</dd></dl>
+<p>For <a class="el" href="namespace_snowflake.html">Snowflake</a>'s gamepad abstracion. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a41a6f6f8c58ec249821ef77e58c5d718"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDictionary&lt;string, dynamic&gt; Snowflake.Controller.IControllerProfile.ToSerializable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates an IDictionary that can be serialized to json or yaml </p>
+<dl class="section return"><dt>Returns</dt><dd>An IDictionary that is to be serialized to json or yaml</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a092d06272423ca9603f422361c796991"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Controller.IControllerProfile.ControllerID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The ID of the controller definition in which this profile is for. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4099e38a03cdd075a368d169ccbe6b4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyDictionary&lt;string, string&gt; Snowflake.Controller.IControllerProfile.InputConfiguration</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The mapping of inputs to keyboard or gamepad. <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">Snowflake.Controller.IControllerInput</a> </p>
+
+</div>
+</div>
+<a class="anchor" id="a8427942ab6807a76853f9992488831ff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Controller.IControllerProfile.PlatformID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The ID of the platform this controller profile is for. [code review needed] (is this redundant?) </p>
+
+</div>
+</div>
+<a class="anchor" id="a4822ec076ec75e9895714a87231e3a6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespace_snowflake_1_1_controller.html#af6896d98053b4f8f2d42c32c6fb05c96">ControllerProfileType</a> Snowflake.Controller.IControllerProfile.ProfileType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether this profile is for a gamepad, keyboard, or unhandled (custom) </p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Controller/IControllerProfile.cs</li>
 </ul>
@@ -130,7 +245,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>PlatformID</b><code
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_controller.html">Controller</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_profile.html">IControllerProfile</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

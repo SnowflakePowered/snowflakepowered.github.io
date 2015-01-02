@@ -1,23 +1,118 @@
 \hypertarget{interface_snowflake_1_1_game_1_1_i_game_database}{}\section{Snowflake.\+Game.\+I\+Game\+Database Interface Reference}
 \label{interface_snowflake_1_1_game_1_1_i_game_database}\index{Snowflake.\+Game.\+I\+Game\+Database@{Snowflake.\+Game.\+I\+Game\+Database}}
+
+
+A database used to store game information  
+
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_ac3df9a6fa7133f65296dfc500d545083}{}void {\bfseries Add\+Game} (\hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} game)\label{interface_snowflake_1_1_game_1_1_i_game_database_ac3df9a6fa7133f65296dfc500d545083}
+void \hyperlink{interface_snowflake_1_1_game_1_1_i_game_database_ac3df9a6fa7133f65296dfc500d545083}{Add\+Game} (\hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} game)
+\begin{DoxyCompactList}\small\item\em Add a game to the database \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_database_a3584894d7c51710b8f0798ea2c37627e}{Get\+All\+Games} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all games in the database \end{DoxyCompactList}\item 
+\hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} \hyperlink{interface_snowflake_1_1_game_1_1_i_game_database_aef05226f448d26158878e2b3e9174600}{Get\+Game\+By\+U\+U\+I\+D} (string uuid)
+\begin{DoxyCompactList}\small\item\em Gets a game by it\textquotesingle{}s unique id \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_database_a020cfc0c7185c730e072bb2488871c6f}{Get\+Games\+By\+Name} (string name\+Search)
+\begin{DoxyCompactList}\small\item\em Gets a list of games with a certain matching name \end{DoxyCompactList}\item 
+I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_database_a8be96dda13fe81e23d35dbb0e50a36e0}{Get\+Games\+By\+Platform} (string platform\+Id)
+\begin{DoxyCompactList}\small\item\em Gets all the games for a certain platform \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a3584894d7c51710b8f0798ea2c37627e}{}I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ {\bfseries Get\+All\+Games} ()\label{interface_snowflake_1_1_game_1_1_i_game_database_a3584894d7c51710b8f0798ea2c37627e}
 
-\item 
-\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_aef05226f448d26158878e2b3e9174600}{}\hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} {\bfseries Get\+Game\+By\+U\+U\+I\+D} (string uuid)\label{interface_snowflake_1_1_game_1_1_i_game_database_aef05226f448d26158878e2b3e9174600}
+\subsection{Detailed Description}
+A database used to store game information 
 
-\item 
-\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a020cfc0c7185c730e072bb2488871c6f}{}I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ {\bfseries Get\+Games\+By\+Name} (string name\+Search)\label{interface_snowflake_1_1_game_1_1_i_game_database_a020cfc0c7185c730e072bb2488871c6f}
 
-\item 
-\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a8be96dda13fe81e23d35dbb0e50a36e0}{}I\+List$<$ \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{I\+Game\+Info} $>$ {\bfseries Get\+Games\+By\+Platform} (string platform\+Id)\label{interface_snowflake_1_1_game_1_1_i_game_database_a8be96dda13fe81e23d35dbb0e50a36e0}
 
-\end{DoxyCompactItemize}
+\subsection{Member Function Documentation}
+\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_ac3df9a6fa7133f65296dfc500d545083}{}\index{Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}!Add\+Game@{Add\+Game}}
+\index{Add\+Game@{Add\+Game}!Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}}
+\subsubsection[{Add\+Game}]{\setlength{\rightskip}{0pt plus 5cm}void Snowflake.\+Game.\+I\+Game\+Database.\+Add\+Game (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Game\+Info}}]{game}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_game_1_1_i_game_database_ac3df9a6fa7133f65296dfc500d545083}
+
+
+Add a game to the database 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & The game to add\\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a3584894d7c51710b8f0798ea2c37627e}{}\index{Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}!Get\+All\+Games@{Get\+All\+Games}}
+\index{Get\+All\+Games@{Get\+All\+Games}!Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}}
+\subsubsection[{Get\+All\+Games}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf I\+Game\+Info}$>$ Snowflake.\+Game.\+I\+Game\+Database.\+Get\+All\+Games (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_game_1_1_i_game_database_a3584894d7c51710b8f0798ea2c37627e}
+
+
+Get a list of all games in the database 
+
+\begin{DoxyReturn}{Returns}
+A list of all games in the database
+\end{DoxyReturn}
+\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_aef05226f448d26158878e2b3e9174600}{}\index{Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}!Get\+Game\+By\+U\+U\+I\+D@{Get\+Game\+By\+U\+U\+I\+D}}
+\index{Get\+Game\+By\+U\+U\+I\+D@{Get\+Game\+By\+U\+U\+I\+D}!Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}}
+\subsubsection[{Get\+Game\+By\+U\+U\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Game\+Info} Snowflake.\+Game.\+I\+Game\+Database.\+Get\+Game\+By\+U\+U\+I\+D (
+\begin{DoxyParamCaption}
+\item[{string}]{uuid}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_game_1_1_i_game_database_aef05226f448d26158878e2b3e9174600}
+
+
+Gets a game by it\textquotesingle{}s unique id 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uuid} & The unique id of the game\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The game with the unique id
+\end{DoxyReturn}
+\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a020cfc0c7185c730e072bb2488871c6f}{}\index{Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}!Get\+Games\+By\+Name@{Get\+Games\+By\+Name}}
+\index{Get\+Games\+By\+Name@{Get\+Games\+By\+Name}!Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}}
+\subsubsection[{Get\+Games\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf I\+Game\+Info}$>$ Snowflake.\+Game.\+I\+Game\+Database.\+Get\+Games\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name\+Search}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_game_1_1_i_game_database_a020cfc0c7185c730e072bb2488871c6f}
+
+
+Gets a list of games with a certain matching name 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Search} & The name of the game to search by\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of games with matching titles
+\end{DoxyReturn}
+\hypertarget{interface_snowflake_1_1_game_1_1_i_game_database_a8be96dda13fe81e23d35dbb0e50a36e0}{}\index{Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}!Get\+Games\+By\+Platform@{Get\+Games\+By\+Platform}}
+\index{Get\+Games\+By\+Platform@{Get\+Games\+By\+Platform}!Snowflake\+::\+Game\+::\+I\+Game\+Database@{Snowflake\+::\+Game\+::\+I\+Game\+Database}}
+\subsubsection[{Get\+Games\+By\+Platform}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<${\bf I\+Game\+Info}$>$ Snowflake.\+Game.\+I\+Game\+Database.\+Get\+Games\+By\+Platform (
+\begin{DoxyParamCaption}
+\item[{string}]{platform\+Id}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_game_1_1_i_game_database_a8be96dda13fe81e23d35dbb0e50a36e0}
+
+
+Gets all the games for a certain platform 
+
+
+\begin{DoxyParams}{Parameters}
+{\em platform\+Id} & The platform id to search for\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+All games in a certain platform
+\end{DoxyReturn}
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

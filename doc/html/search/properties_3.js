@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['payload',['Payload',['../interface_snowflake_1_1_ajax_1_1_i_j_s_response.html#aca4a568b350d1bcb3df0a5484e311670',1,'Snowflake::Ajax::IJSResponse']]]
+  ['gamepaddefault',['GamepadDefault',['../interface_snowflake_1_1_controller_1_1_i_controller_input.html#af599b54bfd5d01c182b8fa10f0918ee8',1,'Snowflake::Controller::IControllerInput']]]
 ];

@@ -1,23 +1,147 @@
 \hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database}{}\section{Snowflake.\+Controller.\+I\+Controller\+Profile\+Database Interface Reference}
 \label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database}\index{Snowflake.\+Controller.\+I\+Controller\+Profile\+Database@{Snowflake.\+Controller.\+I\+Controller\+Profile\+Database}}
+
+
+A database that holds the controller profile data for a certain slot. The database supports 1 to 8 slots or \textquotesingle{}controller\+Index\textquotesingle{}, \hyperlink{namespace_snowflake}{Snowflake} can only store up to 8 profiles for a controller. Every controller profile I\+D has their own table with all the inputs as a column prefixes with \textquotesingle{}I\+N\+P\+U\+T\+\_\+\textquotesingle{}. Profiles can be accessed once stored by the Controller\+I\+D of the controller definition the profile has mapped to, and the slot number. \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{Snowflake.\+Controller.\+I\+Controller\+Profile} \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition}{Snowflake.\+Controller.\+I\+Controller\+Definition}
+
+
+\end{DoxySeeAlso}
+ 
+
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac468d872335c4cdbedaffa5e942654ee}{}void {\bfseries Add\+Controller\+Profile} (\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{I\+Controller\+Profile} controller\+Profile, int controller\+Index)\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac468d872335c4cdbedaffa5e942654ee}
+void \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac468d872335c4cdbedaffa5e942654ee}{Add\+Controller\+Profile} (\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{I\+Controller\+Profile} controller\+Profile, int controller\+Index)
+\begin{DoxyCompactList}\small\item\em Add or update controller profile to the database. \end{DoxyCompactList}\item 
+\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{I\+Controller\+Profile} \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a1e6de30f211c2de303f9c5944ce01969}{Get\+Controller\+Profile} (string controller\+Id, int controller\+Index)
+\begin{DoxyCompactList}\small\item\em Gets the profile for a certain controller definition in a certain slot. \end{DoxyCompactList}\item 
+void \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a00da034510f729461b53d7bce4a1bd4e}{Set\+Device\+Name} (string controller\+Id, int controller\+Index, string device\+Name)
+\begin{DoxyCompactList}\small\item\em Set the device name for a certain controller profile. Used for custom profiles to map to non X\+Input gamepads. todo\+: An alternate solution should be used on non-\/\+Windows environments. Snowflake.\+Controller.\+Controller\+Profile\+Type.\+C\+U\+S\+T\+O\+M\+\_\+\+P\+R\+O\+F\+I\+L\+E \end{DoxyCompactList}\item 
+string \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_abe919ad0989f8404b347ae1baa1119f3}{Get\+Device\+Name} (string controller\+Id, int controller\+Index)
+\begin{DoxyCompactList}\small\item\em Get the device name that corresponds to a profile. Used for custom profiles to map to non X\+Input gamepads. todo\+: An alternate solution should be used on non-\/\+Windows environments. Snowflake.\+Controller.\+Controller\+Profile\+Type.\+C\+U\+S\+T\+O\+M\+\_\+\+P\+R\+O\+F\+I\+L\+E \end{DoxyCompactList}\item 
+void \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a4269ef2c717d4e75d0ab376a6435eef8}{Load\+Tables} (I\+Dictionary$<$ string, \hyperlink{interface_snowflake_1_1_platform_1_1_i_platform_info}{I\+Platform\+Info} $>$ platforms)
+\begin{DoxyCompactList}\small\item\em Load (create) tables for every registered controller for all loaded platforms. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a1e6de30f211c2de303f9c5944ce01969}{}\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{I\+Controller\+Profile} {\bfseries Get\+Controller\+Profile} (string controller\+Id, int controller\+Index)\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a1e6de30f211c2de303f9c5944ce01969}
 
-\item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_abe919ad0989f8404b347ae1baa1119f3}{}string {\bfseries Get\+Device\+Name} (string controller\+Id, int controller\+Index)\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_abe919ad0989f8404b347ae1baa1119f3}
+\subsection{Detailed Description}
+A database that holds the controller profile data for a certain slot. The database supports 1 to 8 slots or \textquotesingle{}controller\+Index\textquotesingle{}, \hyperlink{namespace_snowflake}{Snowflake} can only store up to 8 profiles for a controller. Every controller profile I\+D has their own table with all the inputs as a column prefixes with \textquotesingle{}I\+N\+P\+U\+T\+\_\+\textquotesingle{}. Profiles can be accessed once stored by the Controller\+I\+D of the controller definition the profile has mapped to, and the slot number. \hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_profile}{Snowflake.\+Controller.\+I\+Controller\+Profile} \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_snowflake_1_1_controller_1_1_i_controller_definition}{Snowflake.\+Controller.\+I\+Controller\+Definition}
 
-\item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac0056d73bdaa49c3d8e40f6ea987ed6e}{}void {\bfseries Load\+Tables} (System.\+Collections.\+Generic.\+I\+Dictionary$<$ string, \hyperlink{interface_snowflake_1_1_platform_1_1_i_platform_info}{I\+Platform\+Info} $>$ platforms)\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac0056d73bdaa49c3d8e40f6ea987ed6e}
 
-\item 
-\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a00da034510f729461b53d7bce4a1bd4e}{}void {\bfseries Set\+Device\+Name} (string controller\+Id, int controller\+Index, string device\+Name)\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a00da034510f729461b53d7bce4a1bd4e}
+\end{DoxySeeAlso}
 
-\end{DoxyCompactItemize}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac468d872335c4cdbedaffa5e942654ee}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}!Add\+Controller\+Profile@{Add\+Controller\+Profile}}
+\index{Add\+Controller\+Profile@{Add\+Controller\+Profile}!Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}}
+\subsubsection[{Add\+Controller\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}void Snowflake.\+Controller.\+I\+Controller\+Profile\+Database.\+Add\+Controller\+Profile (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Controller\+Profile}}]{controller\+Profile, }
+\item[{int}]{controller\+Index}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_ac468d872335c4cdbedaffa5e942654ee}
+
+
+Add or update controller profile to the database. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Profile} & The controller profile\\
+\hline
+{\em controller\+Index} & The slot in which to store the profile\\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a1e6de30f211c2de303f9c5944ce01969}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}!Get\+Controller\+Profile@{Get\+Controller\+Profile}}
+\index{Get\+Controller\+Profile@{Get\+Controller\+Profile}!Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}}
+\subsubsection[{Get\+Controller\+Profile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Controller\+Profile} Snowflake.\+Controller.\+I\+Controller\+Profile\+Database.\+Get\+Controller\+Profile (
+\begin{DoxyParamCaption}
+\item[{string}]{controller\+Id, }
+\item[{int}]{controller\+Index}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a1e6de30f211c2de303f9c5944ce01969}
+
+
+Gets the profile for a certain controller definition in a certain slot. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Id} & The controller I\+D for the Controller\+Definition that the profile corresponds to\\
+\hline
+{\em controller\+Index} & The slot in which the profile is stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_abe919ad0989f8404b347ae1baa1119f3}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}!Get\+Device\+Name@{Get\+Device\+Name}}
+\index{Get\+Device\+Name@{Get\+Device\+Name}!Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}}
+\subsubsection[{Get\+Device\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Snowflake.\+Controller.\+I\+Controller\+Profile\+Database.\+Get\+Device\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{controller\+Id, }
+\item[{int}]{controller\+Index}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_abe919ad0989f8404b347ae1baa1119f3}
+
+
+Get the device name that corresponds to a profile. Used for custom profiles to map to non X\+Input gamepads. todo\+: An alternate solution should be used on non-\/\+Windows environments. Snowflake.\+Controller.\+Controller\+Profile\+Type.\+C\+U\+S\+T\+O\+M\+\_\+\+P\+R\+O\+F\+I\+L\+E 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Id} & The controller I\+D of the controller profile\\
+\hline
+{\em controller\+Index} & The slot where the profile is stored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Device name if one is set, null if controller is not type of C\+U\+S\+T\+O\+M\+\_\+\+P\+R\+O\+F\+I\+L\+E
+\end{DoxyReturn}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a4269ef2c717d4e75d0ab376a6435eef8}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}!Load\+Tables@{Load\+Tables}}
+\index{Load\+Tables@{Load\+Tables}!Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}}
+\subsubsection[{Load\+Tables}]{\setlength{\rightskip}{0pt plus 5cm}void Snowflake.\+Controller.\+I\+Controller\+Profile\+Database.\+Load\+Tables (
+\begin{DoxyParamCaption}
+\item[{I\+Dictionary$<$ string, {\bf I\+Platform\+Info} $>$}]{platforms}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a4269ef2c717d4e75d0ab376a6435eef8}
+
+
+Load (create) tables for every registered controller for all loaded platforms. 
+
+\begin{DoxySeeAlso}{See also}
+Snowflake.\+Service.\+I\+Core\+Service.\+Loaded\+Platforms
+
+
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em platforms} & Loaded platforms\\
+\hline
+\end{DoxyParams}
+\hypertarget{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a00da034510f729461b53d7bce4a1bd4e}{}\index{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}!Set\+Device\+Name@{Set\+Device\+Name}}
+\index{Set\+Device\+Name@{Set\+Device\+Name}!Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database@{Snowflake\+::\+Controller\+::\+I\+Controller\+Profile\+Database}}
+\subsubsection[{Set\+Device\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void Snowflake.\+Controller.\+I\+Controller\+Profile\+Database.\+Set\+Device\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{controller\+Id, }
+\item[{int}]{controller\+Index, }
+\item[{string}]{device\+Name}
+\end{DoxyParamCaption}
+)}\label{interface_snowflake_1_1_controller_1_1_i_controller_profile_database_a00da034510f729461b53d7bce4a1bd4e}
+
+
+Set the device name for a certain controller profile. Used for custom profiles to map to non X\+Input gamepads. todo\+: An alternate solution should be used on non-\/\+Windows environments. Snowflake.\+Controller.\+Controller\+Profile\+Type.\+C\+U\+S\+T\+O\+M\+\_\+\+P\+R\+O\+F\+I\+L\+E 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Id} & The controller I\+D of the controller profile\\
+\hline
+{\em controller\+Index} & The slot where the profile is stored\\
+\hline
+{\em device\+Name} & The device name that the profile corresponds to\\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

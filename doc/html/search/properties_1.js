@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['methodname',['MethodName',['../class_snowflake_1_1_ajax_1_1_ajax_method_attribute.html#ace2bd4864bda17e7a7e6fdb3c4e3d82f',1,'Snowflake.Ajax.AjaxMethodAttribute.MethodName()'],['../interface_snowflake_1_1_ajax_1_1_i_j_s_request.html#a89baf2c0eb864e3129b589a311dd12da',1,'Snowflake.Ajax.IJSRequest.MethodName()']]],
-  ['methodparameters',['MethodParameters',['../interface_snowflake_1_1_ajax_1_1_i_j_s_request.html#a29b4147b39836395032254affd4fba95',1,'Snowflake::Ajax::IJSRequest']]],
-  ['methodprefix',['MethodPrefix',['../class_snowflake_1_1_ajax_1_1_ajax_method_attribute.html#a63f45d38381adbe0f3be6d740ccdefab',1,'Snowflake::Ajax::AjaxMethodAttribute']]]
+  ['controllerid',['ControllerID',['../interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a91b1721244d428e39c1833bd82a7c420',1,'Snowflake.Controller.IControllerDefinition.ControllerID()'],['../interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a092d06272423ca9603f422361c796991',1,'Snowflake.Controller.IControllerProfile.ControllerID()']]],
+  ['controllerinputs',['ControllerInputs',['../interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a3d0737e0a8d939836e8c453c8f6625aa',1,'Snowflake::Controller::IControllerDefinition']]],
+  ['controllers',['Controllers',['../interface_snowflake_1_1_platform_1_1_i_platform_info.html#a1151f29fd2b955e694257a3ea83b19eb',1,'Snowflake::Platform::IPlatformInfo']]],
+  ['crc32',['CRC32',['../interface_snowflake_1_1_game_1_1_i_game_info.html#a9a22682d66d9686ff4d64e83eb961624',1,'Snowflake::Game::IGameInfo']]]
 ];

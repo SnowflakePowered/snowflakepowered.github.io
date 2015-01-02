@@ -1,25 +1,8 @@
 var searchData=
 [
-  ['ajax',['Ajax',['../namespace_snowflake_1_1_ajax.html',1,'Snowflake']]],
-  ['configuration',['Configuration',['../namespace_snowflake_1_1_emulator_1_1_configuration.html',1,'Snowflake::Emulator']]],
-  ['constants',['Constants',['../namespace_snowflake_1_1_emulator_1_1_input_1_1_constants.html',1,'Snowflake::Emulator::Input']]],
-  ['constants',['Constants',['../namespace_snowflake_1_1_constants.html',1,'Snowflake']]],
-  ['controller',['Controller',['../namespace_snowflake_1_1_controller.html',1,'Snowflake']]],
-  ['coreevents',['CoreEvents',['../namespace_snowflake_1_1_events_1_1_core_events.html',1,'Snowflake::Events']]],
-  ['emulator',['Emulator',['../namespace_snowflake_1_1_emulator.html',1,'Snowflake']]],
-  ['events',['Events',['../namespace_snowflake_1_1_events.html',1,'Snowflake']]],
-  ['game',['Game',['../namespace_snowflake_1_1_game.html',1,'Snowflake']]],
-  ['httpserver',['HttpServer',['../namespace_snowflake_1_1_service_1_1_http_server.html',1,'Snowflake::Service']]],
-  ['identifier',['Identifier',['../namespace_snowflake_1_1_identifier.html',1,'Snowflake']]],
-  ['information',['Information',['../namespace_snowflake_1_1_information.html',1,'Snowflake']]],
-  ['input',['Input',['../namespace_snowflake_1_1_emulator_1_1_input.html',1,'Snowflake::Emulator']]],
-  ['manager',['Manager',['../namespace_snowflake_1_1_service_1_1_manager.html',1,'Snowflake::Service']]],
-  ['mediastore',['MediaStore',['../namespace_snowflake_1_1_information_1_1_media_store.html',1,'Snowflake::Information']]],
-  ['platform',['Platform',['../namespace_snowflake_1_1_platform.html',1,'Snowflake']]],
-  ['plugin',['Plugin',['../namespace_snowflake_1_1_plugin.html',1,'Snowflake']]],
-  ['plugin',['Plugin',['../namespace_snowflake_1_1_constants_1_1_plugin.html',1,'Snowflake::Constants']]],
-  ['scraper',['Scraper',['../namespace_snowflake_1_1_scraper.html',1,'Snowflake']]],
-  ['service',['Service',['../namespace_snowflake_1_1_service.html',1,'Snowflake']]],
-  ['snowflake',['Snowflake',['../namespace_snowflake.html',1,'']]],
-  ['utility',['Utility',['../namespace_snowflake_1_1_utility.html',1,'Snowflake']]]
+  ['payload',['Payload',['../interface_snowflake_1_1_ajax_1_1_i_j_s_response.html#aca4a568b350d1bcb3df0a5484e311670',1,'Snowflake::Ajax::IJSResponse']]],
+  ['platformid',['PlatformId',['../interface_snowflake_1_1_information_1_1_i_info.html#adbca5b9f2db24b233866de3304500088',1,'Snowflake.Information.IInfo.PlatformId()'],['../interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a8427942ab6807a76853f9992488831ff',1,'Snowflake.Controller.IControllerProfile.PlatformID()']]],
+  ['pluginmanagerloadedeventargs',['PluginManagerLoadedEventArgs',['../class_snowflake_1_1_events_1_1_core_events_1_1_plugin_manager_loaded_event_args.html',1,'Snowflake::Events::CoreEvents']]],
+  ['process',['Process',['../class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server.html#a4205e94106204b2738707b88f84c7670',1,'Snowflake::Service::HttpServer::BaseHttpServer']]],
+  ['profiletype',['ProfileType',['../interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a4822ec076ec75e9895714a87231e3a6c',1,'Snowflake::Controller::IControllerProfile']]]
 ];

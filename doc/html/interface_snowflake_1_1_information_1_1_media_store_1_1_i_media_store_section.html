@@ -99,28 +99,167 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_information_1_
 <div class="title">Snowflake.Information.MediaStore.IMediaStoreSection Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a section in the mediastore.  
+ <a href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af3dc1bd02ecb2d3338f94651480e4b30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3dc1bd02ecb2d3338f94651480e4b30"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Add</b> (string key, string value)</td></tr>
+<tr class="memitem:af3dc1bd02ecb2d3338f94651480e4b30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#af3dc1bd02ecb2d3338f94651480e4b30">Add</a> (string key, string value)</td></tr>
+<tr class="memdesc:af3dc1bd02ecb2d3338f94651480e4b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a file to the mediastore  <a href="#af3dc1bd02ecb2d3338f94651480e4b30">More...</a><br /></td></tr>
 <tr class="separator:af3dc1bd02ecb2d3338f94651480e4b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae9c8aa021f6477d289e1d572f7a6aeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae9c8aa021f6477d289e1d572f7a6aeb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (string key)</td></tr>
+<tr class="memitem:aae9c8aa021f6477d289e1d572f7a6aeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#aae9c8aa021f6477d289e1d572f7a6aeb">Remove</a> (string key)</td></tr>
+<tr class="memdesc:aae9c8aa021f6477d289e1d572f7a6aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a file in the mediastore  <a href="#aae9c8aa021f6477d289e1d572f7a6aeb">More...</a><br /></td></tr>
 <tr class="separator:aae9c8aa021f6477d289e1d572f7a6aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:ab0d70ad45cbbb8aadf5cd992e6d274d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0d70ad45cbbb8aadf5cd992e6d274d4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>SectionName</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ab0d70ad45cbbb8aadf5cd992e6d274d4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#ab0d70ad45cbbb8aadf5cd992e6d274d4">SectionName</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ab0d70ad45cbbb8aadf5cd992e6d274d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the mediastore.  <a href="#ab0d70ad45cbbb8aadf5cd992e6d274d4">More...</a><br /></td></tr>
 <tr class="separator:ab0d70ad45cbbb8aadf5cd992e6d274d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad756842e38469738145eec216952c9b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad756842e38469738145eec216952c9b5"></a>
-IReadOnlyDictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>MediaStoreItems</b><code> [get]</code></td></tr>
+<tr class="memitem:ad756842e38469738145eec216952c9b5"><td class="memItemLeft" align="right" valign="top">IReadOnlyDictionary&lt; string, string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#ad756842e38469738145eec216952c9b5">MediaStoreItems</a><code> [get]</code></td></tr>
+<tr class="memdesc:ad756842e38469738145eec216952c9b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary holding all the items in the mediastore. Never access this dictionary directly, instead use the indexer.  <a href="#ad756842e38469738145eec216952c9b5">More...</a><br /></td></tr>
 <tr class="separator:ad756842e38469738145eec216952c9b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad878b6801659f539a1482b12e09468f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad878b6801659f539a1482b12e09468f6"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>this[string key]</b><code> [get, set]</code></td></tr>
+<tr class="memitem:ad878b6801659f539a1482b12e09468f6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#ad878b6801659f539a1482b12e09468f6">this[string key]</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ad878b6801659f539a1482b12e09468f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access a certain item in the mediastore  <a href="#ad878b6801659f539a1482b12e09468f6">More...</a><br /></td></tr>
 <tr class="separator:ad878b6801659f539a1482b12e09468f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a section in the mediastore. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af3dc1bd02ecb2d3338f94651480e4b30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Information.MediaStore.IMediaStoreSection.Add </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a file to the mediastore </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key in which to store the item</td></tr>
+    <tr><td class="paramname">value</td><td>The path to the file to be added</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aae9c8aa021f6477d289e1d572f7a6aeb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Information.MediaStore.IMediaStoreSection.Remove </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a file in the mediastore </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the mediastore item</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="ad756842e38469738145eec216952c9b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyDictionary&lt;string, string&gt; Snowflake.Information.MediaStore.IMediaStoreSection.MediaStoreItems</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A dictionary holding all the items in the mediastore. Never access this dictionary directly, instead use the indexer. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab0d70ad45cbbb8aadf5cd992e6d274d4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Information.MediaStore.IMediaStoreSection.SectionName</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The name of the mediastore. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad878b6801659f539a1482b12e09468f6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Information.MediaStore.IMediaStoreSection.this[string key]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Access a certain item in the mediastore </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key of the mediastore item</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The path to the mediastore item</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Information/MediaStore/IMediaStoreSection.cs</li>
 </ul>
@@ -130,7 +269,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>this[string key]</b
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_information.html">Information</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_information_1_1_media_store.html">MediaStore</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html">IMediaStoreSection</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

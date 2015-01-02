@@ -98,16 +98,66 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_controller_1_1
 <div class="title">Snowflake.Controller.IControllerDefinition Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">IControllerInput</a> <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">Snowflake.Controller.IControllerInput</a>  
+ <a href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a91b1721244d428e39c1833bd82a7c420"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91b1721244d428e39c1833bd82a7c420"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerID</b><code> [get]</code></td></tr>
+<tr class="memitem:a91b1721244d428e39c1833bd82a7c420"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a91b1721244d428e39c1833bd82a7c420">ControllerID</a><code> [get]</code></td></tr>
+<tr class="memdesc:a91b1721244d428e39c1833bd82a7c420"><td class="mdescLeft">&#160;</td><td class="mdescRight">The ID of the controller This ID is used to reference this controller definition  <a href="#a91b1721244d428e39c1833bd82a7c420">More...</a><br /></td></tr>
 <tr class="separator:a91b1721244d428e39c1833bd82a7c420"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0737e0a8d939836e8c453c8f6625aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d0737e0a8d939836e8c453c8f6625aa"></a>
-IReadOnlyDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html">IControllerInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ControllerInputs</b><code> [get]</code></td></tr>
+<tr class="memitem:a3d0737e0a8d939836e8c453c8f6625aa"><td class="memItemLeft" align="right" valign="top">IReadOnlyDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html">IControllerInput</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a3d0737e0a8d939836e8c453c8f6625aa">ControllerInputs</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3d0737e0a8d939836e8c453c8f6625aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary of inputs that comprise the controller. Inputs are stored with the input name as the key.  <a href="#a3d0737e0a8d939836e8c453c8f6625aa">More...</a><br /></td></tr>
 <tr class="separator:a3d0737e0a8d939836e8c453c8f6625aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a controller layout. Every input (button, triggers, analog sticks) is represeted as <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">IControllerInput</a> <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html" title="Represents a single input on the controller. The recommended naming convention for ControllerInputs a...">Snowflake.Controller.IControllerInput</a> </p>
+</div><h2 class="groupheader">Property Documentation</h2>
+<a class="anchor" id="a91b1721244d428e39c1833bd82a7c420"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Controller.IControllerDefinition.ControllerID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The ID of the controller This ID is used to reference this controller definition </p>
+
+</div>
+</div>
+<a class="anchor" id="a3d0737e0a8d939836e8c453c8f6625aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IReadOnlyDictionary&lt;string, <a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_input.html">IControllerInput</a>&gt; Snowflake.Controller.IControllerDefinition.ControllerInputs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A dictionary of inputs that comprise the controller. Inputs are stored with the input name as the key. </p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Controller/IControllerDefinition.cs</li>
 </ul>
@@ -117,7 +167,7 @@ IReadOnlyDictionary&lt; string, <a class="el" href="interface_snowflake_1_1_cont
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_controller.html">Controller</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_definition.html">IControllerDefinition</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

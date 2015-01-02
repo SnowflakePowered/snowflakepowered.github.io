@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['javascriptmethods',['JavascriptMethods',['../interface_snowflake_1_1_ajax_1_1_i_base_ajax_namespace.html#a2b4acf2a85e2c08b0037604021670df0',1,'Snowflake::Ajax::IBaseAjaxNamespace']]]
+  ['audio',['Audio',['../interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store.html#a283752cbb2839696fe291e4976b435ed',1,'Snowflake::Information::MediaStore::IMediaStore']]]
 ];

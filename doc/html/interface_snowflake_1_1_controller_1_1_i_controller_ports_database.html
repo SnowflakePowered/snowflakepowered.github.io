@@ -98,19 +98,127 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_controller_1_1
 <div class="title">Snowflake.Controller.IControllerPortsDatabase Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This database stores which type of controller is to be used on which port. <a class="el" href="namespace_snowflake.html">Snowflake</a> supports up to 8 ports. It is recommended that when compiling controller profiles, the port number should indicate the slot of the controller profile to be used. Each port should correspond to a physical controller port on the console. Thus, player 1 should use the profile in slot 1 of the controller in port 1 Snowflake.Controller.IControllerDatabase  
+ <a href="interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9040495bc786b924c8d07796c8840635"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9040495bc786b924c8d07796c8840635"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddPlatform</b> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo)</td></tr>
+<tr class="memitem:a9040495bc786b924c8d07796c8840635"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#a9040495bc786b924c8d07796c8840635">AddPlatform</a> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo)</td></tr>
+<tr class="memdesc:a9040495bc786b924c8d07796c8840635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a platform (console) to the database  <a href="#a9040495bc786b924c8d07796c8840635">More...</a><br /></td></tr>
 <tr class="separator:a9040495bc786b924c8d07796c8840635"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427afda45c69d4c7be339bad5df63710"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a427afda45c69d4c7be339bad5df63710"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>GetPort</b> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo, int portNumber)</td></tr>
+<tr class="memitem:a427afda45c69d4c7be339bad5df63710"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#a427afda45c69d4c7be339bad5df63710">GetPort</a> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo, int portNumber)</td></tr>
+<tr class="memdesc:a427afda45c69d4c7be339bad5df63710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the controller in a certain port of a platform (console)  <a href="#a427afda45c69d4c7be339bad5df63710">More...</a><br /></td></tr>
 <tr class="separator:a427afda45c69d4c7be339bad5df63710"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c833ac0647f76f59b048c27e1a29807"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c833ac0647f76f59b048c27e1a29807"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPort</b> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo, int portNumber, string controllerId)</td></tr>
+<tr class="memitem:a9c833ac0647f76f59b048c27e1a29807"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#a9c833ac0647f76f59b048c27e1a29807">SetPort</a> (<a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a> platformInfo, int portNumber, string controllerId)</td></tr>
+<tr class="memdesc:a9c833ac0647f76f59b048c27e1a29807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the controller to be used in a certain port of the platform (console)  <a href="#a9c833ac0647f76f59b048c27e1a29807">More...</a><br /></td></tr>
 <tr class="separator:a9c833ac0647f76f59b048c27e1a29807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This database stores which type of controller is to be used on which port. <a class="el" href="namespace_snowflake.html">Snowflake</a> supports up to 8 ports. It is recommended that when compiling controller profiles, the port number should indicate the slot of the controller profile to be used. Each port should correspond to a physical controller port on the console. Thus, player 1 should use the profile in slot 1 of the controller in port 1 Snowflake.Controller.IControllerDatabase </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a9040495bc786b924c8d07796c8840635"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Controller.IControllerPortsDatabase.AddPlatform </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a>&#160;</td>
+          <td class="paramname"><em>platformInfo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a platform (console) to the database </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">platformInfo</td><td>The platform to be added</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a427afda45c69d4c7be339bad5df63710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Snowflake.Controller.IControllerPortsDatabase.GetPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a>&#160;</td>
+          <td class="paramname"><em>platformInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>portNumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the controller in a certain port of a platform (console) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">platformInfo</td><td>The platform in which the controller is 'plugged in'</td></tr>
+    <tr><td class="paramname">portNumber</td><td>The port number where the controller is 'plugged in'</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c833ac0647f76f59b048c27e1a29807"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Controller.IControllerPortsDatabase.SetPort </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_snowflake_1_1_platform_1_1_i_platform_info.html">IPlatformInfo</a>&#160;</td>
+          <td class="paramname"><em>platformInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>portNumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>controllerId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the controller to be used in a certain port of the platform (console) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">platformInfo</td><td>The platform in which the controller is to be 'plugged in'</td></tr>
+    <tr><td class="paramname">portNumber</td><td>The port number where the controller is to be 'plugged in'</td></tr>
+    <tr><td class="paramname">controllerId</td><td>The ControllerID of the controller to be 'plugged in'</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Controller/IControllerPortsDatabase.cs</li>
 </ul>
@@ -120,7 +228,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPort</b> (<a class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_controller.html">Controller</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html">IControllerPortsDatabase</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>

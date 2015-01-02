@@ -1,5 +1,15 @@
 \hypertarget{interface_snowflake_1_1_information_1_1_i_info}{}\section{Snowflake.\+Information.\+I\+Info Interface Reference}
 \label{interface_snowflake_1_1_information_1_1_i_info}\index{Snowflake.\+Information.\+I\+Info@{Snowflake.\+Information.\+I\+Info}}
+
+
+Represents an object that can have platform-\/relational information attached to it. \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{Snowflake.\+Game.\+I\+Game\+Info} \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_snowflake_1_1_platform_1_1_i_platform_info}{Snowflake.\+Platform.\+I\+Platform\+Info}
+
+
+\end{DoxySeeAlso}
+ 
+
+
 Inheritance diagram for Snowflake.\+Information.\+I\+Info\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +19,55 @@ Inheritance diagram for Snowflake.\+Information.\+I\+Info\+:\begin{figure}[H]
 \subsection*{Properties}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{interface_snowflake_1_1_information_1_1_i_info_adbca5b9f2db24b233866de3304500088}{}string {\bfseries Platform\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\label{interface_snowflake_1_1_information_1_1_i_info_adbca5b9f2db24b233866de3304500088}
+string \hyperlink{interface_snowflake_1_1_information_1_1_i_info_adbca5b9f2db24b233866de3304500088}{Platform\+Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The id of the platform that this object is related to \end{DoxyCompactList}\item 
+string \hyperlink{interface_snowflake_1_1_information_1_1_i_info_ad9450963e1d3443d2e5df274638fd8be}{Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The name of this object \end{DoxyCompactList}\item 
+I\+Dictionary$<$ string, string $>$ \hyperlink{interface_snowflake_1_1_information_1_1_i_info_aeae6832deb9c513619b82c82ab94421c}{Metadata}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Any metadata that is attached to this object, such as descriptions \end{DoxyCompactList}\item 
+\hyperlink{interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store}{I\+Media\+Store} \hyperlink{interface_snowflake_1_1_information_1_1_i_info_a871b33234ef2b413be1ee8e6846768b6}{Media\+Store}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em The mediastore that is attached to this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
-\item 
-\hypertarget{interface_snowflake_1_1_information_1_1_i_info_ad9450963e1d3443d2e5df274638fd8be}{}string {\bfseries Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\label{interface_snowflake_1_1_information_1_1_i_info_ad9450963e1d3443d2e5df274638fd8be}
 
-\item 
-\hypertarget{interface_snowflake_1_1_information_1_1_i_info_aeae6832deb9c513619b82c82ab94421c}{}I\+Dictionary$<$ string, string $>$ {\bfseries Metadata}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}\label{interface_snowflake_1_1_information_1_1_i_info_aeae6832deb9c513619b82c82ab94421c}
+\subsection{Detailed Description}
+Represents an object that can have platform-\/relational information attached to it. \hyperlink{interface_snowflake_1_1_game_1_1_i_game_info}{Snowflake.\+Game.\+I\+Game\+Info} \begin{DoxySeeAlso}{See also}
+\hyperlink{interface_snowflake_1_1_platform_1_1_i_platform_info}{Snowflake.\+Platform.\+I\+Platform\+Info}
 
-\item 
-\hypertarget{interface_snowflake_1_1_information_1_1_i_info_a871b33234ef2b413be1ee8e6846768b6}{}\hyperlink{interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store}{I\+Media\+Store} {\bfseries Media\+Store}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}\label{interface_snowflake_1_1_information_1_1_i_info_a871b33234ef2b413be1ee8e6846768b6}
 
-\end{DoxyCompactItemize}
+\end{DoxySeeAlso}
+
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_snowflake_1_1_information_1_1_i_info_a871b33234ef2b413be1ee8e6846768b6}{}\index{Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}!Media\+Store@{Media\+Store}}
+\index{Media\+Store@{Media\+Store}!Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}}
+\subsubsection[{Media\+Store}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Media\+Store} Snowflake.\+Information.\+I\+Info.\+Media\+Store\hspace{0.3cm}{\ttfamily [get]}}\label{interface_snowflake_1_1_information_1_1_i_info_a871b33234ef2b413be1ee8e6846768b6}
+
+
+The mediastore that is attached to this object. 
+
+\hypertarget{interface_snowflake_1_1_information_1_1_i_info_aeae6832deb9c513619b82c82ab94421c}{}\index{Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}!Metadata@{Metadata}}
+\index{Metadata@{Metadata}!Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}}
+\subsubsection[{Metadata}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<$string, string$>$ Snowflake.\+Information.\+I\+Info.\+Metadata\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{interface_snowflake_1_1_information_1_1_i_info_aeae6832deb9c513619b82c82ab94421c}
+
+
+Any metadata that is attached to this object, such as descriptions 
+
+\hypertarget{interface_snowflake_1_1_information_1_1_i_info_ad9450963e1d3443d2e5df274638fd8be}{}\index{Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}!Name@{Name}}
+\index{Name@{Name}!Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}}
+\subsubsection[{Name}]{\setlength{\rightskip}{0pt plus 5cm}string Snowflake.\+Information.\+I\+Info.\+Name\hspace{0.3cm}{\ttfamily [get]}}\label{interface_snowflake_1_1_information_1_1_i_info_ad9450963e1d3443d2e5df274638fd8be}
+
+
+The name of this object 
+
+\hypertarget{interface_snowflake_1_1_information_1_1_i_info_adbca5b9f2db24b233866de3304500088}{}\index{Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}!Platform\+Id@{Platform\+Id}}
+\index{Platform\+Id@{Platform\+Id}!Snowflake\+::\+Information\+::\+I\+Info@{Snowflake\+::\+Information\+::\+I\+Info}}
+\subsubsection[{Platform\+Id}]{\setlength{\rightskip}{0pt plus 5cm}string Snowflake.\+Information.\+I\+Info.\+Platform\+Id\hspace{0.3cm}{\ttfamily [get]}}\label{interface_snowflake_1_1_information_1_1_i_info_adbca5b9f2db24b233866de3304500088}
+
+
+The id of the platform that this object is related to 
+
 
 
 The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}

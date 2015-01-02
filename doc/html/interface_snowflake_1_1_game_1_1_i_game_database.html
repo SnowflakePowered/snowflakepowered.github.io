@@ -98,25 +98,148 @@ $(document).ready(function(){initNavTree('interface_snowflake_1_1_game_1_1_i_gam
 <div class="title">Snowflake.Game.IGameDatabase Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A database used to store game information  
+ <a href="interface_snowflake_1_1_game_1_1_i_game_database.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac3df9a6fa7133f65296dfc500d545083"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3df9a6fa7133f65296dfc500d545083"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddGame</b> (<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> game)</td></tr>
+<tr class="memitem:ac3df9a6fa7133f65296dfc500d545083"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html#ac3df9a6fa7133f65296dfc500d545083">AddGame</a> (<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> game)</td></tr>
+<tr class="memdesc:ac3df9a6fa7133f65296dfc500d545083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a game to the database  <a href="#ac3df9a6fa7133f65296dfc500d545083">More...</a><br /></td></tr>
 <tr class="separator:ac3df9a6fa7133f65296dfc500d545083"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3584894d7c51710b8f0798ea2c37627e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3584894d7c51710b8f0798ea2c37627e"></a>
-IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAllGames</b> ()</td></tr>
+<tr class="memitem:a3584894d7c51710b8f0798ea2c37627e"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html#a3584894d7c51710b8f0798ea2c37627e">GetAllGames</a> ()</td></tr>
+<tr class="memdesc:a3584894d7c51710b8f0798ea2c37627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of all games in the database  <a href="#a3584894d7c51710b8f0798ea2c37627e">More...</a><br /></td></tr>
 <tr class="separator:a3584894d7c51710b8f0798ea2c37627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef05226f448d26158878e2b3e9174600"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef05226f448d26158878e2b3e9174600"></a>
-<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetGameByUUID</b> (string uuid)</td></tr>
+<tr class="memitem:aef05226f448d26158878e2b3e9174600"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html#aef05226f448d26158878e2b3e9174600">GetGameByUUID</a> (string uuid)</td></tr>
+<tr class="memdesc:aef05226f448d26158878e2b3e9174600"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a game by it's unique id  <a href="#aef05226f448d26158878e2b3e9174600">More...</a><br /></td></tr>
 <tr class="separator:aef05226f448d26158878e2b3e9174600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a020cfc0c7185c730e072bb2488871c6f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a020cfc0c7185c730e072bb2488871c6f"></a>
-IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGamesByName</b> (string nameSearch)</td></tr>
+<tr class="memitem:a020cfc0c7185c730e072bb2488871c6f"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html#a020cfc0c7185c730e072bb2488871c6f">GetGamesByName</a> (string nameSearch)</td></tr>
+<tr class="memdesc:a020cfc0c7185c730e072bb2488871c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of games with a certain matching name  <a href="#a020cfc0c7185c730e072bb2488871c6f">More...</a><br /></td></tr>
 <tr class="separator:a020cfc0c7185c730e072bb2488871c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be96dda13fe81e23d35dbb0e50a36e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8be96dda13fe81e23d35dbb0e50a36e0"></a>
-IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGamesByPlatform</b> (string platformId)</td></tr>
+<tr class="memitem:a8be96dda13fe81e23d35dbb0e50a36e0"><td class="memItemLeft" align="right" valign="top">IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html#a8be96dda13fe81e23d35dbb0e50a36e0">GetGamesByPlatform</a> (string platformId)</td></tr>
+<tr class="memdesc:a8be96dda13fe81e23d35dbb0e50a36e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all the games for a certain platform  <a href="#a8be96dda13fe81e23d35dbb0e50a36e0">More...</a><br /></td></tr>
 <tr class="separator:a8be96dda13fe81e23d35dbb0e50a36e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A database used to store game information </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac3df9a6fa7133f65296dfc500d545083"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Snowflake.Game.IGameDatabase.AddGame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a game to the database </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>The game to add</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3584894d7c51710b8f0798ea2c37627e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&gt; Snowflake.Game.IGameDatabase.GetAllGames </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of all games in the database </p>
+<dl class="section return"><dt>Returns</dt><dd>A list of all games in the database</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aef05226f448d26158878e2b3e9174600"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a> Snowflake.Game.IGameDatabase.GetGameByUUID </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>uuid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a game by it's unique id </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>The unique id of the game</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The game with the unique id</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a020cfc0c7185c730e072bb2488871c6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&gt; Snowflake.Game.IGameDatabase.GetGamesByName </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>nameSearch</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets a list of games with a certain matching name </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nameSearch</td><td>The name of the game to search by</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A list of games with matching titles</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8be96dda13fe81e23d35dbb0e50a36e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IList&lt;<a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html">IGameInfo</a>&gt; Snowflake.Game.IGameDatabase.GetGamesByPlatform </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>platformId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets all the games for a certain platform </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">platformId</td><td>The platform id to search for</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>All games in a certain platform</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>Game/IGameDatabase.cs</li>
 </ul>
@@ -126,7 +249,7 @@ IList&lt; <a class="el" href="interface_snowflake_1_1_game_1_1_i_game_info.html"
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_snowflake.html">Snowflake</a></li><li class="navelem"><a class="el" href="namespace_snowflake_1_1_game.html">Game</a></li><li class="navelem"><a class="el" href="interface_snowflake_1_1_game_1_1_i_game_database.html">IGameDatabase</a></li>
-    <li class="footer">Generated on Thu Jan 1 2015 22:36:22 for Snowflake by
+    <li class="footer">Generated on Fri Jan 2 2015 15:30:43 for Snowflake by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9 </li>
   </ul>
