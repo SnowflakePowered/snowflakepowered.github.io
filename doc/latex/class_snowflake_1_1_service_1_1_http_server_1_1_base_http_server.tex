@@ -1,0 +1,60 @@
+\hypertarget{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server}{}\section{Snowflake.\+Service.\+Http\+Server.\+Base\+Http\+Server Class Reference}
+\label{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server}\index{Snowflake.\+Service.\+Http\+Server.\+Base\+Http\+Server@{Snowflake.\+Service.\+Http\+Server.\+Base\+Http\+Server}}
+
+
+ 
+
+
+Inheritance diagram for Snowflake.\+Service.\+Http\+Server.\+Base\+Http\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a1d7d941bea5a2d1a8856c0be94a2f1a7}{}{\bfseries Base\+Http\+Server} (int port)\label{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a1d7d941bea5a2d1a8856c0be94a2f1a7}
+
+\item 
+\hypertarget{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a277f3db1a4fc105580487c6fa5023df9}{}void {\bfseries Start\+Server} ()\label{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a277f3db1a4fc105580487c6fa5023df9}
+
+\item 
+\hypertarget{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a628c25e83a0a971de4009cc325aa78ab}{}void {\bfseries Stop\+Server} ()\label{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a628c25e83a0a971de4009cc325aa78ab}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+abstract Task \hyperlink{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a4205e94106204b2738707b88f84c7670}{Process} (Http\+Listener\+Context context)
+\begin{DoxyCompactList}\small\item\em Implement this to handle the process loop \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a4205e94106204b2738707b88f84c7670}{}\index{Snowflake\+::\+Service\+::\+Http\+Server\+::\+Base\+Http\+Server@{Snowflake\+::\+Service\+::\+Http\+Server\+::\+Base\+Http\+Server}!Process@{Process}}
+\index{Process@{Process}!Snowflake\+::\+Service\+::\+Http\+Server\+::\+Base\+Http\+Server@{Snowflake\+::\+Service\+::\+Http\+Server\+::\+Base\+Http\+Server}}
+\subsubsection[{Process}]{\setlength{\rightskip}{0pt plus 5cm}abstract Task Snowflake.\+Service.\+Http\+Server.\+Base\+Http\+Server.\+Process (
+\begin{DoxyParamCaption}
+\item[{Http\+Listener\+Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\label{class_snowflake_1_1_service_1_1_http_server_1_1_base_http_server_a4205e94106204b2738707b88f84c7670}
+
+
+Implement this to handle the process loop 
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & The H\+T\+T\+P context of the server listener\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A Task that is called asynchronously that outputs a stream of text to be written as the Http\+Response
+\end{DoxyReturn}
+Snowflake.\+Service.\+Server for example implementations 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Service/\+Http\+Server/Base\+Http\+Server.\+cs\end{DoxyCompactItemize}
