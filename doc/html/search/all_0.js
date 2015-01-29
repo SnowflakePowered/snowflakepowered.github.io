@@ -1,9 +1,18 @@
 var searchData=
 [
-  ['add',['Add',['../interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#af3dc1bd02ecb2d3338f94651480e4b30',1,'Snowflake::Information::MediaStore::IMediaStoreSection']]],
-  ['addcontrollerprofile',['AddControllerProfile',['../interface_snowflake_1_1_controller_1_1_i_controller_profile_database.html#ac468d872335c4cdbedaffa5e942654ee',1,'Snowflake::Controller::IControllerProfileDatabase']]],
-  ['addgame',['AddGame',['../interface_snowflake_1_1_game_1_1_i_game_database.html#ac3df9a6fa7133f65296dfc500d545083',1,'Snowflake::Game::IGameDatabase']]],
-  ['addplatform',['AddPlatform',['../interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#a9040495bc786b924c8d07796c8840635',1,'Snowflake::Controller::IControllerPortsDatabase']]],
+  ['add',['Add',['../class_snowflake_1_1_information_1_1_media_store_1_1_file_media_store_section.html#afbde696e01d48f0da0019671d1ea0b20',1,'Snowflake.Information.MediaStore.FileMediaStoreSection.Add()'],['../interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store_section.html#af3dc1bd02ecb2d3338f94651480e4b30',1,'Snowflake.Information.MediaStore.IMediaStoreSection.Add()']]],
+  ['addgame',['AddGame',['../class_snowflake_1_1_emulator_1_1_configuration_1_1_configuration_flag_store.html#a5ee3406a493c1d76f5f2d2c878f6b1c8',1,'Snowflake.Emulator.Configuration.ConfigurationFlagStore.AddGame()'],['../class_snowflake_1_1_game_1_1_game_database.html#a859513bbac24328df5d3fe2e47dbc183',1,'Snowflake.Game.GameDatabase.AddGame()'],['../interface_snowflake_1_1_emulator_1_1_configuration_1_1_i_configuration_flag_store.html#a963ede44a35945ad4c9d1c599600c078',1,'Snowflake.Emulator.Configuration.IConfigurationFlagStore.AddGame()'],['../interface_snowflake_1_1_game_1_1_i_game_database.html#ac3df9a6fa7133f65296dfc500d545083',1,'Snowflake.Game.IGameDatabase.AddGame()']]],
+  ['addplatform',['AddPlatform',['../class_snowflake_1_1_controller_1_1_controller_ports_database.html#abc919d17fc7c152149b9301a3ca9e8cf',1,'Snowflake.Controller.ControllerPortsDatabase.AddPlatform()'],['../class_snowflake_1_1_platform_1_1_platform_preferences_database.html#a5d47ee260aa6093b4cc25f74e65a35f5',1,'Snowflake.Platform.PlatformPreferencesDatabase.AddPlatform()'],['../interface_snowflake_1_1_controller_1_1_i_controller_ports_database.html#a9040495bc786b924c8d07796c8840635',1,'Snowflake.Controller.IControllerPortsDatabase.AddPlatform()'],['../interface_snowflake_1_1_platform_1_1_i_platform_preference_database.html#a8bc5a4c09b535a81ef0120f6289b5391',1,'Snowflake.Platform.IPlatformPreferenceDatabase.AddPlatform()']]],
+  ['ajax',['Ajax',['../namespace_ajax.html',1,'']]],
+  ['ajaxmanager',['AjaxManager',['../class_snowflake_1_1_service_1_1_manager_1_1_ajax_manager.html',1,'Snowflake::Service::Manager']]],
+  ['ajaxmanager',['AjaxManager',['../interface_snowflake_1_1_service_1_1_i_core_service.html#aea60fe2d50107bc5e2e10f59072825d1',1,'Snowflake::Service::ICoreService']]],
   ['ajaxmethodattribute',['AjaxMethodAttribute',['../class_snowflake_1_1_ajax_1_1_ajax_method_attribute.html',1,'Snowflake::Ajax']]],
-  ['audio',['Audio',['../interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store.html#a283752cbb2839696fe291e4976b435ed',1,'Snowflake::Information::MediaStore::IMediaStore']]]
+  ['apiserver',['APIServer',['../interface_snowflake_1_1_service_1_1_i_core_service.html#a8f623918b823a0375b90345b4d14f07c',1,'Snowflake::Service::ICoreService']]],
+  ['apiserver',['ApiServer',['../class_snowflake_1_1_service_1_1_http_server_1_1_api_server.html',1,'Snowflake::Service::HttpServer']]],
+  ['appdatadirectory',['AppDataDirectory',['../interface_snowflake_1_1_service_1_1_i_core_service.html#aa75d8e327c2802ecd447e130867fb1ea',1,'Snowflake::Service::ICoreService']]],
+  ['assemblieslocation',['AssembliesLocation',['../interface_snowflake_1_1_service_1_1_manager_1_1_i_emulator_assemblies_manager.html#a3d0a40222d54ccf84c1c3b36cba4b7cf',1,'Snowflake::Service::Manager::IEmulatorAssembliesManager']]],
+  ['assemblytype',['AssemblyType',['../interface_snowflake_1_1_emulator_1_1_i_emulator_assembly.html#a379ad80beb0533edf5f5dec1fd367bf5',1,'Snowflake::Emulator::IEmulatorAssembly']]],
+  ['audio',['Audio',['../interface_snowflake_1_1_information_1_1_media_store_1_1_i_media_store.html#a283752cbb2839696fe291e4976b435ed',1,'Snowflake::Information::MediaStore::IMediaStore']]],
+  ['availableprofiles',['AvailableProfiles',['../interface_snowflake_1_1_controller_1_1_i_controller_profile_store.html#aeff306830751744558f53caf655348b4',1,'Snowflake::Controller::IControllerProfileStore']]],
+  ['snowflakecore',['SnowflakeCore',['../namespace_ajax_1_1_snowflake_core.html',1,'Ajax']]]
 ];

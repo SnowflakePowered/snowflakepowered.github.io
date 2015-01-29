@@ -8,8 +8,10 @@ var namespace_snowflake =
     [ "Game", "namespace_snowflake_1_1_game.html", "namespace_snowflake_1_1_game" ],
     [ "Identifier", "namespace_snowflake_1_1_identifier.html", "namespace_snowflake_1_1_identifier" ],
     [ "Information", "namespace_snowflake_1_1_information.html", "namespace_snowflake_1_1_information" ],
+    [ "InputManager", "namespace_snowflake_1_1_input_manager.html", "namespace_snowflake_1_1_input_manager" ],
     [ "Platform", "namespace_snowflake_1_1_platform.html", "namespace_snowflake_1_1_platform" ],
     [ "Plugin", "namespace_snowflake_1_1_plugin.html", "namespace_snowflake_1_1_plugin" ],
+    [ "Presentation", "namespace_snowflake_1_1_presentation.html", "namespace_snowflake_1_1_presentation" ],
     [ "Scraper", "namespace_snowflake_1_1_scraper.html", "namespace_snowflake_1_1_scraper" ],
     [ "Service", "namespace_snowflake_1_1_service.html", "namespace_snowflake_1_1_service" ],
     [ "Utility", "namespace_snowflake_1_1_utility.html", "namespace_snowflake_1_1_utility" ]

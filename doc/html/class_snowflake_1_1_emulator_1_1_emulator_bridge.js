@@ -8,9 +8,10 @@ var class_snowflake_1_1_emulator_1_1_emulator_bridge =
     [ "HandlePrompt", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#acd1ee415922abfd0313929009858b2b4", null ],
     [ "ShutdownEmulator", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a19b6a6f5152034a83365a8a9ea8a03ce", null ],
     [ "StartRom", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#ab490b050c553a114bad5a060dfed8e2f", null ],
+    [ "ConfigurationFlags", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a8d82af25e7a07e8e6e396429630984da", null ],
+    [ "ConfigurationFlagStore", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a785a2139a5e728b8e8cba2463e835ded", null ],
     [ "ConfigurationTemplates", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a0831dcad2a39ac6b776a93bc9a90170f", null ],
     [ "ControllerTemplates", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a36a0729805c8a6f4310be623a8aac378", null ],
     [ "EmulatorAssembly", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#a0390fcb8d486e087e8ef41b59d3bd491", null ],
-    [ "InputTemplates", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#ad9edcddfd91354fa25ce8d533bbec4fe", null ],
-    [ "SupportedPlatforms", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#aeb94bd38fdc783239fe507d9ab644d3f", null ]
+    [ "InputTemplates", "class_snowflake_1_1_emulator_1_1_emulator_bridge.html#ad9edcddfd91354fa25ce8d533bbec4fe", null ]
 ];

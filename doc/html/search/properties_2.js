@@ -1,5 +1,20 @@
 var searchData=
 [
-  ['fileextensions',['FileExtensions',['../interface_snowflake_1_1_platform_1_1_i_platform_info.html#a2e12201a96a5804f7f97dc3239d6a4d3',1,'Snowflake::Platform::IPlatformInfo']]],
-  ['filename',['FileName',['../interface_snowflake_1_1_game_1_1_i_game_info.html#a9d47fb0690eb47f4bdf2e0e60afc4555',1,'Snowflake::Game::IGameInfo']]]
+  ['configuration',['Configuration',['../interface_snowflake_1_1_plugin_1_1_i_plugin_configuration.html#a7cfa77237b6d1785e8f8b1a0eed3ddf8',1,'Snowflake::Plugin::IPluginConfiguration']]],
+  ['configurationentries',['ConfigurationEntries',['../interface_snowflake_1_1_emulator_1_1_configuration_1_1_i_configuration_template.html#ae0e14f8c693702f9eb36937a451c5586',1,'Snowflake::Emulator::Configuration::IConfigurationTemplate']]],
+  ['configurationfilename',['ConfigurationFileName',['../interface_snowflake_1_1_plugin_1_1_i_plugin_configuration.html#a7f457d870f0808d2ef41866df200e008',1,'Snowflake::Plugin::IPluginConfiguration']]],
+  ['configurationflags',['ConfigurationFlags',['../interface_snowflake_1_1_emulator_1_1_i_emulator_bridge.html#ae6912c3d9cb01ab66171965e3cbc80aa',1,'Snowflake::Emulator::IEmulatorBridge']]],
+  ['configurationflagstore',['ConfigurationFlagStore',['../interface_snowflake_1_1_emulator_1_1_i_emulator_bridge.html#a1d58eedddc3f05f1215357de5b839521',1,'Snowflake::Emulator::IEmulatorBridge']]],
+  ['configurationstore',['ConfigurationStore',['../interface_snowflake_1_1_emulator_1_1_configuration_1_1_i_configuration_template.html#a323a96591545b9c36395935288d65410',1,'Snowflake::Emulator::Configuration::IConfigurationTemplate']]],
+  ['configurationstorepath',['ConfigurationStorePath',['../interface_snowflake_1_1_emulator_1_1_configuration_1_1_i_configuration_store.html#abee37ff32fffbb18aa28398c50555239',1,'Snowflake::Emulator::Configuration::IConfigurationStore']]],
+  ['configurationtemplates',['ConfigurationTemplates',['../interface_snowflake_1_1_emulator_1_1_i_emulator_bridge.html#a58d58675778f25f34bcaa5cf512c60ae',1,'Snowflake::Emulator::IEmulatorBridge']]],
+  ['configurationvalues',['ConfigurationValues',['../interface_snowflake_1_1_emulator_1_1_configuration_1_1_i_configuration_profile.html#a78d5d85323b8e4fe20076fd90d7b763b',1,'Snowflake::Emulator::Configuration::IConfigurationProfile']]],
+  ['controllerid',['ControllerID',['../interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a91b1721244d428e39c1833bd82a7c420',1,'Snowflake.Controller.IControllerDefinition.ControllerID()'],['../interface_snowflake_1_1_controller_1_1_i_controller_profile.html#a092d06272423ca9603f422361c796991',1,'Snowflake.Controller.IControllerProfile.ControllerID()'],['../interface_snowflake_1_1_controller_1_1_i_controller_profile_store.html#ac4bce151ee02c0e1f4bf5db1e228f0eb',1,'Snowflake.Controller.IControllerProfileStore.ControllerID()'],['../interface_snowflake_1_1_emulator_1_1_input_1_1_i_controller_template.html#a8d7fbc937f5863e413c5524a1eab489f',1,'Snowflake.Emulator.Input.IControllerTemplate.ControllerID()']]],
+  ['controllerinputs',['ControllerInputs',['../interface_snowflake_1_1_controller_1_1_i_controller_definition.html#a3d0737e0a8d939836e8c453c8f6625aa',1,'Snowflake::Controller::IControllerDefinition']]],
+  ['controllerports',['ControllerPorts',['../interface_snowflake_1_1_platform_1_1_i_platform_info.html#aae74766444f4125cb1bd5189c8579dc7',1,'Snowflake::Platform::IPlatformInfo']]],
+  ['controllerportsdatabase',['ControllerPortsDatabase',['../interface_snowflake_1_1_service_1_1_i_core_service.html#af7fa08512a17d33ceebb9d52f9108065',1,'Snowflake::Service::ICoreService']]],
+  ['controllers',['Controllers',['../interface_snowflake_1_1_platform_1_1_i_platform_info.html#ab8f23c9ec64cabce0d7ae80fbccd0b14',1,'Snowflake::Platform::IPlatformInfo']]],
+  ['controllertemplates',['ControllerTemplates',['../interface_snowflake_1_1_emulator_1_1_i_emulator_bridge.html#a3230286b490dc33b3327b8a2a236b469',1,'Snowflake::Emulator::IEmulatorBridge']]],
+  ['coreinstance',['CoreInstance',['../interface_snowflake_1_1_plugin_1_1_i_base_plugin.html#a6c5e085010d15a35adb658de04687e1e',1,'Snowflake::Plugin::IBasePlugin']]],
+  ['crc32',['CRC32',['../interface_snowflake_1_1_game_1_1_i_game_info.html#a9a22682d66d9686ff4d64e83eb961624',1,'Snowflake::Game::IGameInfo']]]
 ];
