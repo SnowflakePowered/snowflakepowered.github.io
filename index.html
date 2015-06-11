@@ -3,31 +3,35 @@
   <head>
    <title>Snowflake Frontend</title>
    <style>
+     @import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+     @import url(http://fonts.googleapis.com/css?family=Roboto+Mono);
+     @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
      body {
        background : #eee;
        height: 100%;
        width: 100%;
        position: absolute;
        overflow: hidden;
-       font-family: Lucida Console, Consolas, Courier New;
+       font-family: 'Roboto Mono', Lucida Console, Consolas, Courier New;
+       margin: 0;
      }
      .centre{
         display: table-cell;
         vertical-align: middle;
-          position: absolute;
-          height: 100%;
-          width: 100%;
+        position: absolute;
+        height: 100%;
+        width: 100%;
         }
-     
+
      img{
         position: relative;
         text-align: center;
-        margin: 20px;
         font-family: Roboto;
         font-size: 2em;
-        padding: 20px 10px;
+        padding: 20px 0px;
         display: block;
-        width: 700px;
+        max-width: 700px;
+        width: 100%;
         margin: 20px auto !important;
         overflow: hidden;
     }
@@ -42,7 +46,7 @@
         text-align: center;
         color: #999;
         padding-top: 10px;
-        font-size: 0.8em;   
+        font-size: 0.8em;
     }
     #contrib{
         color: #D48AFF;
@@ -57,6 +61,40 @@
         margin: 20px auto !important;
         display: block;
     }
+    .about {
+     background: rgba(255,255,255,0.7);
+     padding: 2%;
+     color: rgb(100, 100, 100);
+     margin-top: 20px;
+     font-family: Roboto, Lucida Console;
+     margin-right: 30px;
+     margin-left: 30px;
+     font-weight: 300;
+    }
+    .abouttag {
+       font-family: 'Roboto Slab', Lucida Console, Consolas, Courier New;
+       font-size: 2em;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+      .about {
+       font-size: 1.2em;
+      }
+      .abouttag {
+         font-family: 'Roboto Slab', Lucida Console, Consolas, Courier New;
+      }
+      body {
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 3em;
+      }
+      img{
+        max-width: 95vw;
+      }
+      .links {
+        font-size: 1em;
+      }
+     }
    </style>
   <link rel="shortcut icon" href="favicon.png">
 
@@ -66,11 +104,31 @@
         <img src="banner.svg"/>
         <div class="links"><a href="https://github.com/SnowflakePowered"><span id="contrib">contribute</span></a> &bullet; <a href="http://blog.ronnchyran.com/tagged/snowflake"><span id="blog">blog</span></a> &bullet; <a href="http://iris.stormbit.net/?channels=#snowflake"><span id="builds">chat</span></a> &bullet; <a href="http://snowflakepowe.red/doc/html/">docs</a></div>
         <div class="tagline"><em>Emulation for the masses.</em></div>
+        <div class="about">
+          <span class="abouttag">What is <em>Snowflake</em>?</span>
+          <p class="abouttext">
+            Snowflake is a brand-new zero-config emulator frontend powered by HTML5.
+            <br /><br />
+            No more spending hours getting even the most basic emulators to work; from the moment you start it, you're ready to play with Snowflake's "batteries included" approach.
+            You can import your games library from an existing frontend, or you can let Snowflake scrape your games and find out <em>exactly</em> which games you have.
+
+            <br /><br />
+            Don't like how something works? Want to change the look of your frontend? Snowflake's powerful theming system and plugin architecture allows you to completely change how Snowflake looks and feels.
+            Want to install a new emulator? Simply install it from Snowflake's plugin repository* and everything has already been configured; just get up and play!
+
+            <br /><br />
+
+            Snowflake is still under development. Star our <a href="https://github.com/SnowflakePowered/snowflake">GitHub repository</a> to keep up with more news from Snowflake.
+            <br /><br />
+
+            <sup><em>*Plugin repository will be available upon official release</em></sup>
+         </p>
+        </div>
         <div class="ad" style="margin-top: 10px;"><ins class="adsbygoogle"
      style="width:728px;height:90px"
      data-ad-client="ca-pub-4126909633008126"
      data-ad-slot="9643749490"></ins></div>
-   </div>    
+   </div>
    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Snowflake Ad -->
 
