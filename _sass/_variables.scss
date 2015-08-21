@@ -1,0 +1,55 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #4183C4;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: rgb(100, 100, 100);
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+$blue: #ABD5FF;
+$purple: #D48AFF;
+$yellow: #FFEB97;
+
+.text-white {
+  color: $white;
+  a {
+    color: $gray !important;
+  }
+  a:visited {
+    color: $gray;
+  }
+}
+.bg-yellow {
+  background-color: $yellow;
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+$roboto: "Roboto", Helvetica, Arial, sans-serif;
+$robotoSlab: "Roboto Slab", "Georgia", "Times New Roman", serif;
+$bebas: "BebasNeue", "Bebas", "Oswald", "Impact", sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}

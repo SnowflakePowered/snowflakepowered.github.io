@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snowflake Progress Report - May 2015 – Snowflake – emulation for the masses</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Snowflake has come a long way from a bunch of hacky Python scripts. 2 years since I started working on a frontend, I’ve finally managed to build something that actually resembles one with C#, HTML5 and Javascript. Snowflake finally comes to a semblance of reality, an app that a person can actually use, and I’m extremely excited to show it off. Everything you see, and more will be available by July’s alpha release.
+" />
+    <meta property="og:description" content="Snowflake has come a long way from a bunch of hacky Python scripts. 2 years since I started working on a frontend, I’ve finally managed to build something that actually resembles one with C#, HTML5 and Javascript. Snowflake finally comes to a semblance of reality, an app that a person can actually use, and I’m extremely excited to show it off. Everything you see, and more will be available by July’s alpha release.
+" />
+    
+    <meta name="author" content="Snowflake" />
+
+    
+    <meta property="og:title" content="Snowflake Progress Report - May 2015" />
+    <meta property="twitter:title" content="Snowflake Progress Report - May 2015" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Snowflake - emulation for the masses" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="/"><img style="height:100%;" src="https://raw.githubusercontent.com/SnowflakePowered/snowflake/master/branding/Snowflake-Ring-128.png"/></a>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                 <li class="active link-blog"><a href="/blog" class="link-blog">blog<span class="sr-only">(current)</span></a></li>
+                 <li class="link-chat"><a href="http://iris.stormbit.net/?channels=#snowflake" class="link-chat">chat</a></li>
+                 <li class="link-contribute"><a href="https://github.com/SnowflakePowered" class="link-contribute">contribute</a></li>
+                 <li class="link-docs"><a href="http://snowflakepowe.red/doc/html/" class="link-docs">docs</a></li>
+               </ul>
+             </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Snowflake Progress Report - May 2015</h1>
+
+  <div class="entry">
+    <p>Snowflake has come a long way from a bunch of hacky Python scripts. 2 years since I started working on a frontend, I’ve finally managed to build something that actually resembles one with C#, HTML5 and Javascript. Snowflake finally comes to a semblance of reality, an app that a person can actually use, and I’m extremely excited to show it off. Everything you see, and more will be available by <strong>July’s alpha release.</strong></p>
+
+<p><img src="http://i.imgur.com/66VDHTW.png" alt="screenshot">If you’ve been following Snowflake’s development this screenshot should feel familiar. This Material Design theme will be Snowflake’s very first theme, built to feel familiar and intuitive. Once I’ve established how everything fits together, <strong>I’ll reuse parts of the code to build an XMB-like 10-foot interface.</strong> This screenshot just shows off the dynamic colour-schemes I have going on that determine the colours by the cover art.</p>
+
+<p>I’ve made some optimizations to this feature by caching the colours, so it only has to calculate the colours once; this resulted in a speedup of at least 10FPS during transitions going by Chrome’s dev tools.</p>
+
+<p><img src="http://fat.gfycat.com/FabulousEmptyDragon.gif" alt="flags"></p>
+
+<p>One of Snowflake’s most important features is setting emulator options inside the interface. When you make a change in setting to a certain game, it’s marked <em>customized</em> for that game, unless you reset it to default. Every time you access the settings, any option not marked <em>customized</em> for a game will re-sync with the defaults. If you make a change to a default, those changes will propagate to every single game which doesn’t have the option marked customized.</p>
+
+<p>The system is remarkably simple. You can set an option, and the emulator plugin just flips a few switches, generates a configuration file and runs the emulator with the selected ROM. This will work with <em>any</em> emulator that uses configuration files.</p>
+
+<p><img src="http://fat.gfycat.com/KeyTanFieldspaniel.gif" alt="controller-select"></p>
+
+<p>You can also change controller settings inside Snowflake. How it works is, Snowflake stores a “definition” for a certain controller, that’s linked to a certain platform — the <em>NES</em>CONTROLLER_ is linked to the NES platform, etc. Then, for each controller, there’s a profile that’s linked with a certain input device. Usually the profile name is the same as the full device name, but for convinience, Snowflake gives the keyboard and 4 XInput controllers names that are easier remember than <code>Microsoft Xbox 360 Controller (for Windows)</code>.</p>
+
+<p><img src="http://giant.gfycat.com/QuestionableWelltodoGrassspider.gif" alt="set-input"></p>
+
+<p>Click the input you want to change, and a dialog will pop up. Press the new key you want, save your changes, and your controller setting for <strong>every emulator for that platform</strong> has been changed, just as if you were using a core in RetroArch. Except instead, we’re just wrapping an EXE. And it’s easier to use.</p>
+
+<p><strong>What’s left?</strong> The cruicial parts I’m missing right now are</p>
+
+<ul>
+<li>  A way to set player 1, 2, 3, 4.</li>
+<li>  A way to change the default options for an emulator</li>
+<li>  Putting everything inside electron-shell instead of running it in Chrome.</li>
+</ul>
+
+<p>The first two will be easy to implement. All I have to do is write the UI for that and hook it up to existing Javascript callbacks supplied by the C# core. The last part is the most important, but will be the most time-consuming to do. I need to be able to wrap everything up into one package, especially since having access to the filesystem is extremely important, which Chrome can’t give me. I’m not sure I’ll be able to make #3 by July, so the alpha release won’t be as polished as I’d hoped. However, I’m going to work on putting in all the features first before working on that.</p>
+
+<p>There’s also the issue of Polymer 1.0. I’m currently using an old set of Polymer components that aren’t foward compatible. I’ll have to port everything over to the new version of Polymer once they’ve ported all the elements in. I’m expecting to do that after the alpha release in July.</p>
+
+  </div>
+
+  <div class="date">
+    Written on May 30, 2015
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <p>&copy; Ronny Chan and Snowflake Contributors 2015. Text content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0.</a></p>
+          <a href="https://github.com/SnowflakePowered/snowflake">Fork me on&nbsp;<span style="vertical-align: middle;" class="ss-octocat"></span></a>
+          <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+      <!--    
+
+
+
+<a href="https://github.com/SnowflakePowered"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+ -->
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66616518-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/May%20Progress%20Report/',
+		  'title': 'Snowflake Progress Report - May 2015'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

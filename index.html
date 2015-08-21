@@ -1,148 +1,47 @@
-<!doctype html>
-<html>
-  <head>
-   <title>Snowflake Frontend</title>
-   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-   <style>
-     @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
-     @import url(http://fonts.googleapis.com/css?family=Roboto+Mono);
-     @import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
-     body {
-       background : #eee;
-       height: 100%;
-       width: 100%;
-       position: absolute;
-       overflow-x: hidden;
-       font-family: 'Roboto Mono', Lucida Console, Consolas, Courier New;
-       margin: 0;
-     }
-     .centre{
-        display: table-cell;
-        vertical-align: middle;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        }
-
-     img{
-        position: relative;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 2em;
-        padding: 20px 0px;
-        display: block;
-        max-width: 700px;
-        width: 100%;
-        margin: 20px auto !important;
-        overflow: hidden;
-    }
-     .links{
-       text-align: center;
-    }
-    .links a{
-        text-decoration: none;
-       color: #888 !important;
-    }
-    .tagline{
-        text-align: center;
-        color: #999;
-        padding-top: 10px;
-        font-size: 0.8em;
-    }
-    #contrib{
-        color: #D48AFF;
-    }
-    #blog{
-        color: #ABD5FF;
-    }
-    #builds{
-        color: #ffdc4b;
-    }
-    .adsbygoogle{
-        margin: 20px auto !important;
-        display: block;
-    }
-    .about {
-     background: rgba(255,255,255,0.7);
-     padding: 2%;
-     color: rgb(100, 100, 100);
-     margin-top: 20px;
-     font-family: Roboto, Lucida Console;
-     margin-right: 30px;
-     margin-left: 30px;
-     font-weight: 300;
-    }
-    .warning {
-      padding: 1%;
-      font-size: 10pt;
-      font-weight: 300;
-      font-family: 'Roboto Slab';
-      color: #D48AFF;
-    }
-    .abouttag {
-       font-family: 'Roboto Slab', Lucida Console, Consolas, Courier New;
-       font-size: 2em;
-    }
-    .announce a {
-      text-decoration: none;
-      font-weight: 400;
-      font-size: 14pt;
-      color: #03c03c;
-    }
-   </style>
-  <link rel="shortcut icon" href="favicon.png">
-
-  </head>
-  <body>
-   <div class="centre">
-        <img src="banner.svg"/>
-        <div class="links"><a href="https://github.com/SnowflakePowered">
-          <span id="contrib">contribute</span></a> &bullet; <a href="http://blog.ronnchyran.com/tagged/snowflake">
-            <span id="blog">blog</span></a> &bullet; <a href="http://iris.stormbit.net/?channels=#snowflake">
-              <span id="builds">chat</span></a> &bullet; <a href="http://snowflakepowe.red/doc/html/">docs</a></div>
-        <div class="tagline"><em>Emulation for the masses.</em></div>
-        <div class="about announce warning">
-          <p class="abouttext">
-            <a href="http://snowflakepowe.red/8-13-2015.html">Read the August preview!</a>
-         </p>
-
+---
+layout: no-container
+title: Snowflake Emulator Frontend
+---
+<div class="jumbotron">
+    <img class="bg-jumbo" src="images/jumbotron.svg">
+    <div class="container clearfix">
+        <div class="text-jumbo col-md-6">
+            <h1 class="tag-jumbo">A frontend made for you.</h1>
+            <p>Snowflake is a brand-new zero-config emulator frontend powered by HTML5.</p>
         </div>
-        <div class="about warning">
-          <p class="abouttext">
-            Unfortunately, the anticipated July alpha preview has been delayed. Sorry for the inconvienience.
-         </p>
+    </div>
+</div>
+
+<div class="alpha col-md-12 clearfix">
+    <p>
+        Snowflake is pre-alpha software still under heavy development. Read about our features and progress reports below.
+    </p>
+</div>
+<div class="features col-md-12">
+  <div class="col-md-4 bg-yellow clearfix">
+      <h2>Simple</h2>
+      <p>Snowflake is super easy to use and understand. With it's 'batteries included' approach, you longer need to spend hours setting up emulators just to play a game.Games are intelligently scraped &mdash; download accurate information about your games every time. No more wrong searches or manual editing! (You can still edit if you want.)</p>
+  </div>
+  <div class="col-md-4 bg-blue clearfix">
+      <h2>Customizable</h2>
+      <p>Snowflake lets you change emulator settings and configuration inside your frontend. A powerful theme system powered by HTML5 and <a href="http://electron.atom.io">Electron</a> lets you change your frontend to your liking, or completely overhaul it with a custom theme.</p>
+  </div>
+  <div class="col-md-4 bg-purple text-white clearfix">
+      <h2>Open</h2>
+      <p>Snowflake is <a href="github.com/SnowflakePowered/snowflake">open source software</a>. Our plugin system lets you add new features we never could've thought of, our theming API lets you completely change the look and feel of Snowflake. Publish your plugin or theme to our upcoming plugin repostory and share it with the world.</p>
+  </div>
+</div>
+<div class="posts col-md-12">
+    {% for post in site.posts %}
+    <article class="post">
+
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <div class="entry">
+            {{ post.content | strip_html | truncatewords: 50 }}
         </div>
-        <div class="about">
 
-          <span class="abouttag">What is <em>Snowflake</em>?</span>
-          <p class="abouttext">
-            Snowflake is a brand-new zero-config emulator frontend powered by HTML5.
-            <br /><br />
-            No more spending hours getting even the most basic emulators to work; from the moment you start, you're ready to play with Snowflake's "batteries included" approach.
-            You can import your games library from an existing frontend, or you can let Snowflake scrape your games and find out <em>exactly</em> which games you have.
-
-            <br /><br />
-            Don't like how something works? Want to change the look of your frontend? Snowflake's powerful theming system and plugin architecture allows you to completely change how Snowflake looks and feels.
-            Want to install a new emulator? Simply install it from Snowflake's plugin repository* and everything has already been configured; just get up and play!
-
-            <br /><br />
-
-            Snowflake is still under development. Star our <a href="https://github.com/SnowflakePowered/snowflake">GitHub repository</a> to keep up with more news from Snowflake.
-            <br /><br />
-
-            <sup><em>*Plugin repository will be available upon official release</em></sup>
-         </p>
-        </div>
-        <div class="ad" style="margin-top: 10px;"><ins class="adsbygoogle"
-     style="width:728px;height:90px"
-     data-ad-client="ca-pub-4126909633008126"
-     data-ad-slot="9643749490"></ins></div>
-   </div>
-   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Snowflake Ad -->
-
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  </body>
-</html>
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+    {% endfor %}
+</div>

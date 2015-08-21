@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Snowflake Developer Roundup - April 2015 – Snowflake – emulation for the masses</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="There hasn&#39;t been as much progress as I would have liked from February to April, but work is still continuing at a steady rate. There&#39;s been few, but very large improvements that I&#39;d like to talk about. That, and I finally have a screenshot of a working incarnation of the final UI.
+
+Material Design UI
+
+Since my last devlog in February, I&#39;ve gotten my UI up and running, and basically displaying information regarding a game. Currently it can performantly display a large amount of games, and scrape them from just the file. I&#39;m still missing things like changing settings and controller configuration from within the frontend, and a file-browser to add games. (Right now, you have to manually type in the path for each ROM), but it&#39;s coming along fine. When paper-elements are ported to Polymer 0.8, work will begin on porting this theme to Polymer 0.8 for more performance increases.
+
+.
+
+Identifier Improvements
+
+Snowflake&#39;s scraping system works by first inferring available information from the ROM file itself, such as the filename, the CRC32 hash, or the game name by looking up a dat from No-Intro, before sending that and querying something like TheGamesDB, and comparing the results to get the best match. This works very well, but there&#39;s always been a problem with scrapers only being able to use a single &#39;identifier&#39; value. I tried to solve this before by passing all the values in a dictionary, keyed on the identifier plugin name. However, this means the scraper would have to know what identifier plugins are available beforehand, which isn&#39;t ideal.
+
+What I ended up doing was passing additional metadata along with the raw information from the identifier. The scraper gets a list of the data, which includes the actual value, the name of the plugin, and the type of data it is. For example, if the identifier finds the title of the game, then the type of value is GameTitle. The scraper plugin can just look up all values that are GameTitle, and get the first one. Or if it needs a Disc ID such as for PSX or Wii games, they can look up all values that are DiscId, and compare the scraped results with the Disc ID to ensure it&#39;s the correct result. Snowflake will also support loading local data from JSON files for those that don&#39;t like re-scraping their library.
+
+Goodbye MediaStore
+
+MediaStore was a way for Snowflake to store images, videos and audio about Games and Platforms. &nbsp;It was a really complex system designed to be as generic as possible to incorporate the needs of storing media for both Games, Platforms and everything in between. As I was building the theme you saw above, I came to realize that the MediaStore system was too bloated and buggy a system. Platforms didn&#39;t need media data stored in the core, images of those should be handled by the theme. I didn&#39;t have any other pieces of information using it other than games, and if I&#39;m only using it for Games, why not redesign it. MediaStore was also a piece of cruft in the Stone standard, a loose set of requirements meant to provide some standard ways of handling information throughout all emulator frontends. Although it&#39;s unlikely it&#39;ll catch on, the idea of a Snowflake-exclusive concept in the games database ran in opposition to Stone&#39;s ideals. And so, MediaStore was phased out of Snowflake and made obsolete.
+
+GameMediaCache
+
+With MediaStore gone, Snowflake still needed a way to store data like boxarts and game-clips. It should be simple to use, be loosely-coupled, that is, exist entirely outside the game database, and be designed for the needs of games. The GameMediaCache is a simple way to store certain types of media related to games. It can store
+
+
+BoxartFront
+BoxartBack
+BoxartFull
+GameFanart
+GameMusic
+GameVideo
+
+
+and only these 6 items. Every game automatically has cache created for it on scrape-time, and its keyed on the game uuid, so all the theme needs to know is the id of the game, no special, extra key nescessary. To further ensure ease-of-access, GameMusic will only accept mp3, wav and ogg, and GameVideo will only accept h.264 mp4 and webm files.
+
+GameScreeenshotCache
+
+MediaStore was also a way for games to store screenshots, but it was never really built for that purpose. GameScreenshotCache was built so that emulator-bridge plugins can easily save screenshots to a central directory for Snowflake to access. Screenshots are uniquely named with the time the screenshot was added, and are saved as PNG regardless of the original format of the screenshot. I hope to have something like a FileSystemWatcher watching a directory that emulators save screenshots in, and copying it into the GameScreenshotCache
+
+Accessing the new Caches: GameCacheServer
+
+Snowflake was intended to have the UI frontend be done in the browser. Certainly it doesn&#39;t restrict other ways of interfacing with the core backend (the part that handles scraping,.game-database and emulators), it does give provide some convenience features for access across HTTP.
+
+The GameCacheServer replaces the old FileMediaStoreServer and is an easy way to access the GameScreenshotCache and GameMediaCache. Image files are always served as PNG files with the mimetype image/png, and since music and video are restricted to browser-friendly formats, there won&#39;t be any trouble utilizing such resources. GameCacheServer also supports on-the-fly resizing of images to reduce any client-side performance issues. For more information about the GameCacheServer, refer to the Pull Request notes for PR #110
+
+Onwards
+
+I haven&#39;t planned on making such drastic changes to the API, but it came out of necessity. MediaStore was full of cruft and bloat and was in hindsight a bad idea. I much prefer a more structured way of saving this data in GameMediaCache, and GameMediaCache is very loosely-coupled, I could remove it without breaking API as I had to when deprecating MediaStore.
+
+Onwards, we&#39;re looking at finalizing the features of the UI and finally putting all this stuff into atom-shell rather than debugging through Chrome. Everything is on track for a July or August developer preview release, and I&#39;m very excited. If there&#39;s time, I hope to get more RetroArch cores wrapped, and a Dolphin wrapper as well, as one of my original goals in Snowflake was to have a nice-looking frontend to Dolphin.
+" />
+    <meta property="og:description" content="There hasn&#39;t been as much progress as I would have liked from February to April, but work is still continuing at a steady rate. There&#39;s been few, but very large improvements that I&#39;d like to talk about. That, and I finally have a screenshot of a working incarnation of the final UI.
+
+Material Design UI
+
+Since my last devlog in February, I&#39;ve gotten my UI up and running, and basically displaying information regarding a game. Currently it can performantly display a large amount of games, and scrape them from just the file. I&#39;m still missing things like changing settings and controller configuration from within the frontend, and a file-browser to add games. (Right now, you have to manually type in the path for each ROM), but it&#39;s coming along fine. When paper-elements are ported to Polymer 0.8, work will begin on porting this theme to Polymer 0.8 for more performance increases.
+
+.
+
+Identifier Improvements
+
+Snowflake&#39;s scraping system works by first inferring available information from the ROM file itself, such as the filename, the CRC32 hash, or the game name by looking up a dat from No-Intro, before sending that and querying something like TheGamesDB, and comparing the results to get the best match. This works very well, but there&#39;s always been a problem with scrapers only being able to use a single &#39;identifier&#39; value. I tried to solve this before by passing all the values in a dictionary, keyed on the identifier plugin name. However, this means the scraper would have to know what identifier plugins are available beforehand, which isn&#39;t ideal.
+
+What I ended up doing was passing additional metadata along with the raw information from the identifier. The scraper gets a list of the data, which includes the actual value, the name of the plugin, and the type of data it is. For example, if the identifier finds the title of the game, then the type of value is GameTitle. The scraper plugin can just look up all values that are GameTitle, and get the first one. Or if it needs a Disc ID such as for PSX or Wii games, they can look up all values that are DiscId, and compare the scraped results with the Disc ID to ensure it&#39;s the correct result. Snowflake will also support loading local data from JSON files for those that don&#39;t like re-scraping their library.
+
+Goodbye MediaStore
+
+MediaStore was a way for Snowflake to store images, videos and audio about Games and Platforms. &nbsp;It was a really complex system designed to be as generic as possible to incorporate the needs of storing media for both Games, Platforms and everything in between. As I was building the theme you saw above, I came to realize that the MediaStore system was too bloated and buggy a system. Platforms didn&#39;t need media data stored in the core, images of those should be handled by the theme. I didn&#39;t have any other pieces of information using it other than games, and if I&#39;m only using it for Games, why not redesign it. MediaStore was also a piece of cruft in the Stone standard, a loose set of requirements meant to provide some standard ways of handling information throughout all emulator frontends. Although it&#39;s unlikely it&#39;ll catch on, the idea of a Snowflake-exclusive concept in the games database ran in opposition to Stone&#39;s ideals. And so, MediaStore was phased out of Snowflake and made obsolete.
+
+GameMediaCache
+
+With MediaStore gone, Snowflake still needed a way to store data like boxarts and game-clips. It should be simple to use, be loosely-coupled, that is, exist entirely outside the game database, and be designed for the needs of games. The GameMediaCache is a simple way to store certain types of media related to games. It can store
+
+
+BoxartFront
+BoxartBack
+BoxartFull
+GameFanart
+GameMusic
+GameVideo
+
+
+and only these 6 items. Every game automatically has cache created for it on scrape-time, and its keyed on the game uuid, so all the theme needs to know is the id of the game, no special, extra key nescessary. To further ensure ease-of-access, GameMusic will only accept mp3, wav and ogg, and GameVideo will only accept h.264 mp4 and webm files.
+
+GameScreeenshotCache
+
+MediaStore was also a way for games to store screenshots, but it was never really built for that purpose. GameScreenshotCache was built so that emulator-bridge plugins can easily save screenshots to a central directory for Snowflake to access. Screenshots are uniquely named with the time the screenshot was added, and are saved as PNG regardless of the original format of the screenshot. I hope to have something like a FileSystemWatcher watching a directory that emulators save screenshots in, and copying it into the GameScreenshotCache
+
+Accessing the new Caches: GameCacheServer
+
+Snowflake was intended to have the UI frontend be done in the browser. Certainly it doesn&#39;t restrict other ways of interfacing with the core backend (the part that handles scraping,.game-database and emulators), it does give provide some convenience features for access across HTTP.
+
+The GameCacheServer replaces the old FileMediaStoreServer and is an easy way to access the GameScreenshotCache and GameMediaCache. Image files are always served as PNG files with the mimetype image/png, and since music and video are restricted to browser-friendly formats, there won&#39;t be any trouble utilizing such resources. GameCacheServer also supports on-the-fly resizing of images to reduce any client-side performance issues. For more information about the GameCacheServer, refer to the Pull Request notes for PR #110
+
+Onwards
+
+I haven&#39;t planned on making such drastic changes to the API, but it came out of necessity. MediaStore was full of cruft and bloat and was in hindsight a bad idea. I much prefer a more structured way of saving this data in GameMediaCache, and GameMediaCache is very loosely-coupled, I could remove it without breaking API as I had to when deprecating MediaStore.
+
+Onwards, we&#39;re looking at finalizing the features of the UI and finally putting all this stuff into atom-shell rather than debugging through Chrome. Everything is on track for a July or August developer preview release, and I&#39;m very excited. If there&#39;s time, I hope to get more RetroArch cores wrapped, and a Dolphin wrapper as well, as one of my original goals in Snowflake was to have a nice-looking frontend to Dolphin.
+" />
+    
+    <meta name="author" content="Snowflake" />
+
+    
+    <meta property="og:title" content="Snowflake Developer Roundup - April 2015" />
+    <meta property="twitter:title" content="Snowflake Developer Roundup - April 2015" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Snowflake - emulation for the masses" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="/"><img style="height:100%;" src="https://raw.githubusercontent.com/SnowflakePowered/snowflake/master/branding/Snowflake-Ring-128.png"/></a>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                 <li class="active link-blog"><a href="/blog" class="link-blog">blog<span class="sr-only">(current)</span></a></li>
+                 <li class="link-chat"><a href="http://iris.stormbit.net/?channels=#snowflake" class="link-chat">chat</a></li>
+                 <li class="link-contribute"><a href="https://github.com/SnowflakePowered" class="link-contribute">contribute</a></li>
+                 <li class="link-docs"><a href="http://snowflakepowe.red/doc/html/" class="link-docs">docs</a></li>
+               </ul>
+             </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Snowflake Developer Roundup - April 2015</h1>
+
+  <div class="entry">
+    <p>There hasn&#39;t been as much progress as I would have liked from February to April, but work is still continuing at a steady rate. There&#39;s been few, but very large improvements that I&#39;d like to talk about. That, and I finally have a screenshot of a working incarnation of the final UI.</p>
+
+<h2>Material Design UI</h2>
+
+<p>Since my last devlog in February, I&#39;ve gotten my UI up and running, and basically displaying information regarding a game. Currently it can performantly display a large amount of games, and scrape them from just the file. I&#39;m still missing things like changing settings and controller configuration from within the frontend, and a file-browser to add games. (Right now, you have to manually type in the path for each ROM), but it&#39;s coming along fine. When <code>paper-elements</code> are ported to <a href="https://www.polymer-project.org/0.8/">Polymer 0.8</a>, work will begin on porting this theme to Polymer 0.8 for more performance increases.</p>
+
+<p><img src="https://camo.githubusercontent.com/2a41d2013108677782ae8e30007989c46ed93d67/687474703a2f2f692e696d6775722e636f6d2f6455625a536b312e706e67" alt="screenshot">.</p>
+
+<h2>Identifier Improvements</h2>
+
+<p>Snowflake&#39;s scraping system works by first inferring available information from the ROM file itself, such as the filename, the CRC32 hash, or the game name by looking up a dat from No-Intro, before sending that and querying something like <a href="http://thegamesdb.net/">TheGamesDB</a>, and comparing the results to get the best match. This works very well, but there&#39;s always been a problem with scrapers only being able to use a single &#39;identifier&#39; value. I tried to solve this before by passing all the values in a dictionary, keyed on the identifier plugin name. However, this means the scraper would have to know what identifier plugins are available beforehand, which isn&#39;t ideal.</p>
+
+<p>What I ended up doing was passing additional metadata along with the raw information from the identifier. The scraper gets a list of the data, which includes the actual value, the name of the plugin, and the type of data it is. For example, if the identifier finds the title of the game, then the type of value is <code>GameTitle</code>. The scraper plugin can just look up all values that are <code>GameTitle</code>, and get the first one. Or if it needs a Disc ID such as for PSX or Wii games, they can look up all values that are <code>DiscId</code>, and compare the scraped results with the Disc ID to ensure it&#39;s the correct result. Snowflake will also support loading local data from JSON files for those that don&#39;t like re-scraping their library.</p>
+
+<h2>Goodbye MediaStore</h2>
+
+<p>MediaStore was a way for Snowflake to store images, videos and audio about Games and Platforms. &nbsp;It was a really complex system designed to be as generic as possible to incorporate the needs of storing media for both Games, Platforms and everything in between. As I was building the theme you saw above, I came to realize that the MediaStore system was too bloated and buggy a system. Platforms didn&#39;t need media data stored in the core, images of those should be handled by the theme. I didn&#39;t have any other pieces of information using it other than games, and if I&#39;m only using it for Games, why not redesign it. MediaStore was also a piece of cruft in the <a href="https://github.com/SnowflakePowered/stone">Stone</a> standard, a loose set of requirements meant to provide some standard ways of handling information throughout all emulator frontends. Although it&#39;s unlikely it&#39;ll catch on, the idea of a Snowflake-exclusive concept in the games database ran in opposition to Stone&#39;s ideals. And so, MediaStore was phased out of Snowflake and made obsolete.</p>
+
+<h2>GameMediaCache</h2>
+
+<p>With MediaStore gone, Snowflake still needed a way to store data like boxarts and game-clips. It should be simple to use, be loosely-coupled, that is, exist entirely outside the game database, and be designed for the needs of games. The GameMediaCache is a simple way to store certain types of media related to games. It can store</p>
+
+<ul>
+<li>BoxartFront</li>
+<li>BoxartBack</li>
+<li>BoxartFull</li>
+<li>GameFanart</li>
+<li>GameMusic</li>
+<li>GameVideo</li>
+</ul>
+
+<p>and only these 6 items. Every game automatically has cache created for it on scrape-time, and its keyed on the game uuid, so all the theme needs to know is the id of the game, no special, extra key nescessary. To further ensure ease-of-access, GameMusic will only accept mp3, wav and ogg, and GameVideo will only accept h.264 mp4 and webm files.</p>
+
+<h2>GameScreeenshotCache</h2>
+
+<p>MediaStore was also a way for games to store screenshots, but it was never really built for that purpose. GameScreenshotCache was built so that emulator-bridge plugins can easily save screenshots to a central directory for Snowflake to access. Screenshots are uniquely named with the time the screenshot was added, and are saved as PNG regardless of the original format of the screenshot. I hope to have something like a <code>FileSystemWatcher</code> watching a directory that emulators save screenshots in, and copying it into the GameScreenshotCache</p>
+
+<h2>Accessing the new Caches: GameCacheServer</h2>
+
+<p>Snowflake was intended to have the UI frontend be done in the browser. Certainly it doesn&#39;t restrict other ways of interfacing with the core backend (the part that handles scraping,.game-database and emulators), it does give provide some convenience features for access across HTTP.</p>
+
+<p>The GameCacheServer replaces the old FileMediaStoreServer and is an easy way to access the GameScreenshotCache and GameMediaCache. Image files are always served as PNG files with the mimetype <code>image/png</code>, and since music and video are restricted to browser-friendly formats, there won&#39;t be any trouble utilizing such resources. GameCacheServer also supports on-the-fly resizing of images to reduce any client-side performance issues. For more information about the GameCacheServer, refer to the <a href="https://github.com/SnowflakePowered/snowflake/pull/110">Pull Request notes for PR #110</a></p>
+
+<h2>Onwards</h2>
+
+<p>I haven&#39;t planned on making such drastic changes to the API, but it came out of necessity. MediaStore was full of cruft and bloat and was in hindsight a bad idea. I much prefer a more structured way of saving this data in GameMediaCache, and GameMediaCache is very loosely-coupled, I could remove it without breaking API as I had to when deprecating MediaStore.</p>
+
+<p>Onwards, we&#39;re looking at finalizing the features of the UI and finally putting all this stuff into atom-shell rather than debugging through Chrome. Everything is on track for a July or August developer preview release, and I&#39;m very excited. If there&#39;s time, I hope to get more RetroArch cores wrapped, and a Dolphin wrapper as well, as one of my original goals in Snowflake was to have a nice-looking frontend to Dolphin.</p>
+
+  </div>
+
+  <div class="date">
+    Written on April 21, 2015
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <p>&copy; Ronny Chan and Snowflake Contributors 2015. Text content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0.</a></p>
+          <a href="https://github.com/SnowflakePowered/snowflake">Fork me on&nbsp;<span style="vertical-align: middle;" class="ss-octocat"></span></a>
+          <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+          <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+      <!--    
+
+
+
+<a href="https://github.com/SnowflakePowered"><i class="svg-icon github"></i></a>
+
+
+
+
+
+
+
+ -->
+        </footer>
+      </div>
+    </div>
+
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-66616518-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/April%20Progress%20Report/',
+		  'title': 'Snowflake Developer Roundup - April 2015'
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+  </body>
+</html>

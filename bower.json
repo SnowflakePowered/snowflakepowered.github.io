@@ -1,0 +1,20 @@
+{
+  "name": "snowflake-website",
+  "version": "0.0.1",
+  "homepage": "http://snowflakepowe.red",
+  "authors": [
+    "RonnChyran <ronny6993@gmail.com>"
+  ],
+  "description": "Snowflake.github.io",
+  "license": "CC BY SA",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}

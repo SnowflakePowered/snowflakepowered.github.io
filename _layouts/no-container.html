@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="/"><img style="height:100%;" src="https://raw.githubusercontent.com/SnowflakePowered/snowflake/master/branding/Snowflake-Ring-128.png"/></a>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav navbar-right">
+                 <li class="active link-blog"><a href="/blog" class="link-blog">blog<span class="sr-only">(current)</span></a></li>
+                 <li class="link-chat"><a href="http://iris.stormbit.net/?channels=#snowflake" class="link-chat">chat</a></li>
+                 <li class="link-contribute"><a href="https://github.com/{{ site.footer-links.github }}" class="link-contribute">contribute</a></li>
+                 <li class="link-docs"><a href="http://snowflakepowe.red/doc/html/" class="link-docs">docs</a></li>
+               </ul>
+             </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+
+      {{ content }}
+
+      <div class="wrapper-footer">
+        <div class="container">
+          <footer class="footer">
+            <p>&copy; Ronny Chan and Snowflake Contributors 2015. Text content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0.</a></p>
+            <a href="https://github.com/SnowflakePowered/snowflake">Fork me on&nbsp;<span style="vertical-align: middle;" class="ss-octocat"></span></a>
+            <script src="{{ site.baseurl }}/bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="{{ site.baseurl }}/bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+        <!--    {% include svg-icons.html %} -->
+          </footer>
+        </div>
+      </div>
+
+
+    {% include analytics.html %}
+  </body>
+</html>

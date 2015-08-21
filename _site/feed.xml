@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snowflake</title>
+    <description>emulation for the masses</description>
+    <link>http://snowflakepowe.red</link>
+    <atom:link href="http://snowflakepowe.red/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>Snowflake Progress Report - August 2015</title>
+        <description>&lt;p&gt;First off, apologies for the delay in releasing the alpha preview. Originally, I planned to release earlier, but as I went on, I felt Snowflake is still not ready for use. I want to deliver you the best frontend ever, even in alpha. Only recently were some features added, and there still aren&amp;#39;t enough emulators that have had plugins written, which is taking more time than anticipated. The main theme still has a few bugs and unimplemented features, and overall it&amp;#39;s lacking in polish that would&amp;#39;ve been great for a preview. That doesn&amp;#39;t mean you can&amp;#39;t see what I&amp;#39;ve been up to these past months though!&lt;/p&gt;
+
+&lt;p&gt;You can contact through &lt;a href=&quot;http://reddit.com/u/ron975&quot;&gt;reddit&lt;/a&gt; or by email at &lt;a href=&quot;mailto:ronny@ronnchyran.com&quot;&gt;ronny@ronnchyran.com&lt;/a&gt;. Without further ado, let&amp;#39;s take a look at some new features since the last showcase.&lt;/p&gt;
+
+&lt;h2&gt;Better settings&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/qgVGi2U.gif&quot; alt=&quot;Better Settings&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Changing settings has been improved greatly. The previous &amp;quot;Customized&amp;quot; system has been completely overhauled to be more explicit with a locked (set to default settings) and unlocked (customizable) system.  Loading and syncing settings has also been optimized, it now loads and refreshes twice as fast, and doesn&amp;#39;t randomly lose customized settings anymore as it did before.&lt;/p&gt;
+
+&lt;h2&gt;One device, one gamepad&lt;/h2&gt;
+
+&lt;p&gt;Snowflake used to require every single device be separate in terms of mapping controls. This would&amp;#39;ve meant having to set different button mappings for every controller, for every device. You would be setting the &amp;#39;A&amp;#39; button fifteen times just so you could play &lt;em&gt;Super Mario Bros. 3&lt;/em&gt; and &lt;em&gt;Sonic &amp;amp; Knuckles&lt;/em&gt; the same way.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/MIEOg9e.png&quot; alt=&quot;Simple Control&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;This feature has been reworked to use a system more similar to RetroArch&amp;#39;s. For every input device there is only one set of mappings to a &amp;quot;virtual&amp;quot; gamepad that is worked down the each emulator&amp;#39;s controls. The A button is now the same button across the Genesis, the PlayStation (err.. &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/c/c2/PlayStationX.svg&quot; alt=&quot;Cross&quot;&gt; button), and the Gamecube.&lt;/p&gt;
+
+&lt;h2&gt;PLAYER ONE &amp;mdash; Insert Controller&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/jOi3bVa.png&quot; alt=&quot;Port Settings&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can choose which device you want to use for which player, just like an actual console. &lt;small&gt;&lt;del&gt;Now you can beat Psycho Mantis&lt;/del&gt;&lt;/small&gt; For now, Snowflake works only with the keyboard/mouse and XInput controllers. Support for DirectInput and udev (Linux) will come soon after the alpha.&lt;/p&gt;
+
+&lt;h2&gt;More and more emulators&lt;/h2&gt;
+
+&lt;p&gt;The most important part of an emulator frontend is the emulators. Many more emulators have already been adapted to Snowflake&amp;#39;s powerful plugin system, like &lt;a href=&quot;https://github.com/SnowflakePowered/emulator-RetroArchBridge&quot;&gt;Mednafen PSX and Genesis Plus GX&lt;/a&gt;. A Dolphin plugin is &lt;a href=&quot;https://github.com/SnowflakePowered/emulator-DolphinBridge&quot;&gt;already coming together&lt;/a&gt;. Snowflake&amp;#39;s plugin system is extremely flexible; the Dolphin plugin will detect whether or not you have Wii remotes plugged in and automatically override any emulated Wiimotes.&lt;/p&gt;
+
+&lt;h2&gt;Spiffy installer&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/IMsdNxZ.gif&quot; alt=&quot;installer&quot;&gt;
+Snowflake is going to be easy to install. When you first start it up, Snowflake will grab a list of plugins from a plugin repository and automatically download and install them. We&amp;#39;re still working on the downloading part (the alpha will have to come with all plugins pre-installed), but Snowflake makes both the first setup, and keeping up to date, extremely easy.&lt;/p&gt;
+
+&lt;h2&gt;More to come&lt;/h2&gt;
+
+&lt;p&gt;We&amp;#39;re quickly approaching Snowflake 1.0 Alpha. The dream I&amp;#39;ve had for &lt;a href=&quot;https://github.com/RonnChyran/Snowflake-old&quot;&gt;2+ years&lt;/a&gt; and &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake-py&quot;&gt;3 rewrites&lt;/a&gt; is finally coming to fruition, but it&amp;#39;s not done yet. I have big plans in mind, including cloud saves, automatic CUE generation for PSX games and a 10-foot theme based on &lt;a href=&quot;http://www.lakka.tv/&quot;&gt;Lakka.tv&lt;/a&gt;. If you have any more ideas or features you want to see in Snowflake, feel free to contact me through &lt;a href=&quot;http://reddit.com/u/ron975&quot;&gt;reddit&lt;/a&gt; or by email at &lt;a href=&quot;mailto:ronny@ronnchyran.com&quot;&gt;ronny@ronnchyran.com&lt;/a&gt;. I can&amp;#39;t wait to see what I can show off by the Alpha.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://snowflakepowe.red/August%20Progress%20Report/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/August%20Progress%20Report/</guid>
+      </item>
+    
+      <item>
+        <title>Snowflake Developer Roundup - August 2015</title>
+        <description>&lt;p&gt;There have been some major changes to the Snowflake API since I&amp;#39;ve done a developer-oriented devlog. The good news is, now that all these big changes have been done, there aren&amp;#39;t any more huge overhauls planned (except maybe the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/issues/142&quot;&gt;removal of the entire IIdentifier API&lt;/a&gt; ), so it is now safe to work with Snowflake&amp;#39;s API to build and extend your frontend. &lt;strong&gt;The following is a wall of text that may be technical-sounding and regards the inner workings of Snowflake. Read on if you want to learn how to make plugins or themes&lt;/strong&gt;. To get started with Snowflake,
+you can get what you need to get set up at &lt;a href=&quot;http://www.nuget.org/packages/Snowflake&quot;&gt;NuGet&lt;/a&gt; and &lt;a href=&quot;https://www.npmjs.com/package/snowflake.js&quot;&gt;npm&lt;/a&gt;. Offline documentation is available for download at &lt;a href=&quot;https://ci.appveyor.com/project/RonnChyran/snowflake/build/artifacts&quot;&gt;AppVeyor&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Make snowflake.js requests respond with useful objects&lt;/h4&gt;
+
+&lt;p&gt;For themers, [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/132&quot;&gt;PR #132&lt;/a&gt;] makes &lt;code&gt;snowflake.setFlagValues&lt;/code&gt; return all the new values, so you don&amp;#39;t have to make an extra call to &lt;code&gt;snowflake.getFlagValues&lt;/code&gt;. [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/156&quot;&gt;PR #156&lt;/a&gt;] makes all JSAPI methods that used to return a status string return the object that was manipulated so you can use it right after. Unfortunately I still have to get on the documentation for &lt;code&gt;snowflake.js&lt;/code&gt; and &lt;code&gt;Snowflake.StandardAjax&lt;/code&gt;, so I apologize for that if you wanted to make a theme. You can look at &lt;a href=&quot;https://github.com/SnowflakePowered/theme-paper-snowflake&quot;&gt;theme-paper-snowflake&lt;/a&gt; to see how to interact with the Snowflake JSAPI to make themes.&lt;/p&gt;
+
+&lt;h4&gt;C# 6.0 features&lt;/h4&gt;
+
+&lt;p&gt;Most importantly, [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/154&quot;&gt;PR #154&lt;/a&gt;] upgrades Snowflake to use C# 6.0 features, as well as doing some code-cleanup. This means you will need &lt;a href=&quot;https://www.visualstudio.com/en-us/downloads/download-visual-studio-vs.aspx&quot;&gt;Visual Studio 2015&lt;/a&gt; to develop with Snowflake. Around the same time I&amp;#39;ve also [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/152&quot;&gt;PR #152&lt;/a&gt;] cleaned up and improved documentation. Documentation is now available in both &lt;a href=&quot;https://ci.appveyor.com/project/RonnChyran/snowflake/build/artifacts&quot;&gt;Sandcastle and Doxygen formats&lt;/a&gt;. Doxygen provides some more information into the concrete implementations of some interfaces, but Sandcastle looks a lot more nicer.&lt;/p&gt;
+
+&lt;h4&gt;Proper entry point on Windows&lt;/h4&gt;
+
+&lt;p&gt;[&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/126&quot;&gt;PR #126&lt;/a&gt;] Introduces a proper entry-point on Windows rather than the hacky Core.Init. I&amp;#39;m planning to extend this with a simple socket command interface (something basic like &amp;quot;&lt;code&gt;SHUTDOWN&lt;/code&gt;/&lt;code&gt;RESTART&lt;/code&gt;/&lt;code&gt;INSTALLPLUGINS&lt;/code&gt;&amp;quot;) so the theme can communicate with it&amp;#39;s host. Plugin installation will also be handled by the shell; plugins will be packaged in a simple ZIP compressed format with a manifest, and the shell will simply install whatever is placed into a staging folder.&lt;/p&gt;
+
+&lt;h4&gt;Flexible events framework&lt;/h4&gt;
+
+&lt;p&gt;One of the major overhauls in the API is with [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/134&quot;&gt;PR #134&lt;/a&gt;] the events API. Rather than a set list of events that can&amp;#39;t be extendable, the new Events API acts like a dependency-injection container. You register the event type with the &lt;code&gt;SnowflakeEventsManager.EventSource&lt;/code&gt;, which persists indefinitely throughout the lifetime of the application, and you can raise and subscribe to the event as long as the plugin has knowledge of the EventArgs&amp;#39;s Type. This makes it much more flexible and exposes a service for plugins to use.&lt;/p&gt;
+
+&lt;h4&gt;Better plugin utilities&lt;/h4&gt;
+
+&lt;p&gt;Speaking of plugins, [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/128&quot;&gt;PR #128&lt;/a&gt;] and [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/147&quot;&gt;PR #147&lt;/a&gt;] introduce new utility features for plugins to use. Plugins can now clean up on unload by overriding &lt;code&gt;Dispose()&lt;/code&gt; as per .NET conventions, and access a logger object at &lt;code&gt;this.Logger&lt;/code&gt;. &lt;code&gt;IPluginConfigurationOption&lt;/code&gt; hasn&amp;#39;t been implemented yet, but will be a way for themes to access and change plugin options, basically a shim for an &lt;code&gt;IPluginConfiguration&lt;/code&gt; object.&lt;/p&gt;
+
+&lt;h4&gt;EmulatorBridge improvements&lt;/h4&gt;
+
+&lt;p&gt;There are a lot of breaking changes that involve &lt;code&gt;IEmulatorBridge&lt;/code&gt;, in order to make writing bridges and adapters much easier. &lt;a href=&quot;sorry%20for%20the%20messy%20commit%20history&quot;&gt;&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/149&quot;&gt;PR #149&lt;/a&gt;&lt;/a&gt; splits off super-long single time templates into their own files, because JSON doesn&amp;#39;t like multi-line strings. I find this is much more easier to work with rather than having strings with &lt;code&gt;\r\n&lt;/code&gt; scattered literally everywhere, simply name the template the same as the configuration ID, and save it as an embedded resource. Most importantly, [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/159&quot;&gt;PR #159&lt;/a&gt;] inserts the &lt;code&gt;IGameInfo&lt;/code&gt; game object into all the &lt;code&gt;CompileConfiguration&lt;/code&gt; and &lt;code&gt;CompileController&lt;/code&gt; overloads. This allows plugins to conditionally compile configuration files based on the game and the game&amp;#39;s flags. This allows things like selecting which &lt;a href=&quot;https://github.com/SnowflakePowered/emulator-DolphinBridge/blob/master/DolphinBridge.Stable.Five/resource/flags.json#L3&quot;&gt;Wii Remote extension to use&lt;/a&gt; by a configuration flag.&lt;/p&gt;
+
+&lt;h4&gt;Controller compilation improvements&lt;/h4&gt;
+
+&lt;p&gt;[&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/144&quot;&gt;PR #144&lt;/a&gt;] adds mouse support to &lt;code&gt;IKeyboardMapping&lt;/code&gt;, so any &lt;code&gt;input.json&lt;/code&gt; files will have to be updated to accommodate the new &lt;code&gt;MOUSE_*&lt;/code&gt; keys. [&lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/121&quot;&gt;PR #121&lt;/a&gt;] greatly simplifies controller compilation. Instead of having to map each profile to a controller definition, and to a device, &lt;code&gt;GamepadAbstraction&lt;/code&gt; provides a RetroArch or HTML5-like model of a unified virtual gamepad modeled on an XInput controller. Instead of getting the profile for the controller for the device, you can simply get the &lt;code&gt;GamepadAbstraction&lt;/code&gt; for the device, and everything is automatically &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake-controllers&quot;&gt;mapped together by the controller definition&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Getting Started&lt;/h4&gt;
+
+&lt;p&gt;You can get what you need to get set up at &lt;a href=&quot;http://www.nuget.org/packages/Snowflake&quot;&gt;NuGet&lt;/a&gt; and &lt;a href=&quot;https://www.npmjs.com/package/snowflake.js&quot;&gt;npm&lt;/a&gt;. Offline documentation is available for download at &lt;a href=&quot;https://ci.appveyor.com/project/RonnChyran/snowflake/build/artifacts&quot;&gt;AppVeyor&lt;/a&gt;. To reiterate, the Plugin, Events and StandardAjax (snowflake.js) APIs are essentially stable now and won&amp;#39;t have any more breaking changes  unless something big happens, but please do be aware that Snowflake is still technically in code-churn so do look out for any breaking PRs that are to be merged by starring the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake&quot;&gt;GitHub page&lt;/a&gt;. If you need any help with understanding the API, contact me through &lt;a href=&quot;reddit.com/u/ron975&quot;&gt;reddit&lt;/a&gt; or by email at &lt;a href=&quot;mailto:ronny@ronnchyran.com&quot;&gt;ronny@ronnchyran.com&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 13 Aug 2015 00:00:00 -0400</pubDate>
+        <link>http://snowflakepowe.red/August%20Developer%20Roundup/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/August%20Developer%20Roundup/</guid>
+      </item>
+    
+      <item>
+        <title>Snowflake Progress Report - May 2015</title>
+        <description>&lt;p&gt;Snowflake has come a long way from a bunch of hacky Python scripts. 2 years since I started working on a frontend, I’ve finally managed to build something that actually resembles one with C#, HTML5 and Javascript. Snowflake finally comes to a semblance of reality, an app that a person can actually use, and I’m extremely excited to show it off. Everything you see, and more will be available by &lt;strong&gt;July’s alpha release.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/66VDHTW.png&quot; alt=&quot;screenshot&quot;&gt;If you’ve been following Snowflake’s development this screenshot should feel familiar. This Material Design theme will be Snowflake’s very first theme, built to feel familiar and intuitive. Once I’ve established how everything fits together, &lt;strong&gt;I’ll reuse parts of the code to build an XMB-like 10-foot interface.&lt;/strong&gt; This screenshot just shows off the dynamic colour-schemes I have going on that determine the colours by the cover art.&lt;/p&gt;
+
+&lt;p&gt;I’ve made some optimizations to this feature by caching the colours, so it only has to calculate the colours once; this resulted in a speedup of at least 10FPS during transitions going by Chrome’s dev tools.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fat.gfycat.com/FabulousEmptyDragon.gif&quot; alt=&quot;flags&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;One of Snowflake’s most important features is setting emulator options inside the interface. When you make a change in setting to a certain game, it’s marked &lt;em&gt;customized&lt;/em&gt; for that game, unless you reset it to default. Every time you access the settings, any option not marked &lt;em&gt;customized&lt;/em&gt; for a game will re-sync with the defaults. If you make a change to a default, those changes will propagate to every single game which doesn’t have the option marked customized.&lt;/p&gt;
+
+&lt;p&gt;The system is remarkably simple. You can set an option, and the emulator plugin just flips a few switches, generates a configuration file and runs the emulator with the selected ROM. This will work with &lt;em&gt;any&lt;/em&gt; emulator that uses configuration files.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://fat.gfycat.com/KeyTanFieldspaniel.gif&quot; alt=&quot;controller-select&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also change controller settings inside Snowflake. How it works is, Snowflake stores a “definition” for a certain controller, that’s linked to a certain platform — the &lt;em&gt;NES&lt;/em&gt;CONTROLLER_ is linked to the NES platform, etc. Then, for each controller, there’s a profile that’s linked with a certain input device. Usually the profile name is the same as the full device name, but for convinience, Snowflake gives the keyboard and 4 XInput controllers names that are easier remember than &lt;code&gt;Microsoft Xbox 360 Controller (for Windows)&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://giant.gfycat.com/QuestionableWelltodoGrassspider.gif&quot; alt=&quot;set-input&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Click the input you want to change, and a dialog will pop up. Press the new key you want, save your changes, and your controller setting for &lt;strong&gt;every emulator for that platform&lt;/strong&gt; has been changed, just as if you were using a core in RetroArch. Except instead, we’re just wrapping an EXE. And it’s easier to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What’s left?&lt;/strong&gt; The cruicial parts I’m missing right now are&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;  A way to set player 1, 2, 3, 4.&lt;/li&gt;
+&lt;li&gt;  A way to change the default options for an emulator&lt;/li&gt;
+&lt;li&gt;  Putting everything inside electron-shell instead of running it in Chrome.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The first two will be easy to implement. All I have to do is write the UI for that and hook it up to existing Javascript callbacks supplied by the C# core. The last part is the most important, but will be the most time-consuming to do. I need to be able to wrap everything up into one package, especially since having access to the filesystem is extremely important, which Chrome can’t give me. I’m not sure I’ll be able to make #3 by July, so the alpha release won’t be as polished as I’d hoped. However, I’m going to work on putting in all the features first before working on that.&lt;/p&gt;
+
+&lt;p&gt;There’s also the issue of Polymer 1.0. I’m currently using an old set of Polymer components that aren’t foward compatible. I’ll have to port everything over to the new version of Polymer once they’ve ported all the elements in. I’m expecting to do that after the alpha release in July.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 May 2015 00:00:00 -0400</pubDate>
+        <link>http://snowflakepowe.red/May%20Progress%20Report/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/May%20Progress%20Report/</guid>
+      </item>
+    
+      <item>
+        <title>Snowflake Developer Roundup - April 2015</title>
+        <description>&lt;p&gt;There hasn&amp;#39;t been as much progress as I would have liked from February to April, but work is still continuing at a steady rate. There&amp;#39;s been few, but very large improvements that I&amp;#39;d like to talk about. That, and I finally have a screenshot of a working incarnation of the final UI.&lt;/p&gt;
+
+&lt;h2&gt;Material Design UI&lt;/h2&gt;
+
+&lt;p&gt;Since my last devlog in February, I&amp;#39;ve gotten my UI up and running, and basically displaying information regarding a game. Currently it can performantly display a large amount of games, and scrape them from just the file. I&amp;#39;m still missing things like changing settings and controller configuration from within the frontend, and a file-browser to add games. (Right now, you have to manually type in the path for each ROM), but it&amp;#39;s coming along fine. When &lt;code&gt;paper-elements&lt;/code&gt; are ported to &lt;a href=&quot;https://www.polymer-project.org/0.8/&quot;&gt;Polymer 0.8&lt;/a&gt;, work will begin on porting this theme to Polymer 0.8 for more performance increases.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://camo.githubusercontent.com/2a41d2013108677782ae8e30007989c46ed93d67/687474703a2f2f692e696d6775722e636f6d2f6455625a536b312e706e67&quot; alt=&quot;screenshot&quot;&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Identifier Improvements&lt;/h2&gt;
+
+&lt;p&gt;Snowflake&amp;#39;s scraping system works by first inferring available information from the ROM file itself, such as the filename, the CRC32 hash, or the game name by looking up a dat from No-Intro, before sending that and querying something like &lt;a href=&quot;http://thegamesdb.net/&quot;&gt;TheGamesDB&lt;/a&gt;, and comparing the results to get the best match. This works very well, but there&amp;#39;s always been a problem with scrapers only being able to use a single &amp;#39;identifier&amp;#39; value. I tried to solve this before by passing all the values in a dictionary, keyed on the identifier plugin name. However, this means the scraper would have to know what identifier plugins are available beforehand, which isn&amp;#39;t ideal.&lt;/p&gt;
+
+&lt;p&gt;What I ended up doing was passing additional metadata along with the raw information from the identifier. The scraper gets a list of the data, which includes the actual value, the name of the plugin, and the type of data it is. For example, if the identifier finds the title of the game, then the type of value is &lt;code&gt;GameTitle&lt;/code&gt;. The scraper plugin can just look up all values that are &lt;code&gt;GameTitle&lt;/code&gt;, and get the first one. Or if it needs a Disc ID such as for PSX or Wii games, they can look up all values that are &lt;code&gt;DiscId&lt;/code&gt;, and compare the scraped results with the Disc ID to ensure it&amp;#39;s the correct result. Snowflake will also support loading local data from JSON files for those that don&amp;#39;t like re-scraping their library.&lt;/p&gt;
+
+&lt;h2&gt;Goodbye MediaStore&lt;/h2&gt;
+
+&lt;p&gt;MediaStore was a way for Snowflake to store images, videos and audio about Games and Platforms. &amp;nbsp;It was a really complex system designed to be as generic as possible to incorporate the needs of storing media for both Games, Platforms and everything in between. As I was building the theme you saw above, I came to realize that the MediaStore system was too bloated and buggy a system. Platforms didn&amp;#39;t need media data stored in the core, images of those should be handled by the theme. I didn&amp;#39;t have any other pieces of information using it other than games, and if I&amp;#39;m only using it for Games, why not redesign it. MediaStore was also a piece of cruft in the &lt;a href=&quot;https://github.com/SnowflakePowered/stone&quot;&gt;Stone&lt;/a&gt; standard, a loose set of requirements meant to provide some standard ways of handling information throughout all emulator frontends. Although it&amp;#39;s unlikely it&amp;#39;ll catch on, the idea of a Snowflake-exclusive concept in the games database ran in opposition to Stone&amp;#39;s ideals. And so, MediaStore was phased out of Snowflake and made obsolete.&lt;/p&gt;
+
+&lt;h2&gt;GameMediaCache&lt;/h2&gt;
+
+&lt;p&gt;With MediaStore gone, Snowflake still needed a way to store data like boxarts and game-clips. It should be simple to use, be loosely-coupled, that is, exist entirely outside the game database, and be designed for the needs of games. The GameMediaCache is a simple way to store certain types of media related to games. It can store&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;BoxartFront&lt;/li&gt;
+&lt;li&gt;BoxartBack&lt;/li&gt;
+&lt;li&gt;BoxartFull&lt;/li&gt;
+&lt;li&gt;GameFanart&lt;/li&gt;
+&lt;li&gt;GameMusic&lt;/li&gt;
+&lt;li&gt;GameVideo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;and only these 6 items. Every game automatically has cache created for it on scrape-time, and its keyed on the game uuid, so all the theme needs to know is the id of the game, no special, extra key nescessary. To further ensure ease-of-access, GameMusic will only accept mp3, wav and ogg, and GameVideo will only accept h.264 mp4 and webm files.&lt;/p&gt;
+
+&lt;h2&gt;GameScreeenshotCache&lt;/h2&gt;
+
+&lt;p&gt;MediaStore was also a way for games to store screenshots, but it was never really built for that purpose. GameScreenshotCache was built so that emulator-bridge plugins can easily save screenshots to a central directory for Snowflake to access. Screenshots are uniquely named with the time the screenshot was added, and are saved as PNG regardless of the original format of the screenshot. I hope to have something like a &lt;code&gt;FileSystemWatcher&lt;/code&gt; watching a directory that emulators save screenshots in, and copying it into the GameScreenshotCache&lt;/p&gt;
+
+&lt;h2&gt;Accessing the new Caches: GameCacheServer&lt;/h2&gt;
+
+&lt;p&gt;Snowflake was intended to have the UI frontend be done in the browser. Certainly it doesn&amp;#39;t restrict other ways of interfacing with the core backend (the part that handles scraping,.game-database and emulators), it does give provide some convenience features for access across HTTP.&lt;/p&gt;
+
+&lt;p&gt;The GameCacheServer replaces the old FileMediaStoreServer and is an easy way to access the GameScreenshotCache and GameMediaCache. Image files are always served as PNG files with the mimetype &lt;code&gt;image/png&lt;/code&gt;, and since music and video are restricted to browser-friendly formats, there won&amp;#39;t be any trouble utilizing such resources. GameCacheServer also supports on-the-fly resizing of images to reduce any client-side performance issues. For more information about the GameCacheServer, refer to the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/pull/110&quot;&gt;Pull Request notes for PR #110&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2&gt;Onwards&lt;/h2&gt;
+
+&lt;p&gt;I haven&amp;#39;t planned on making such drastic changes to the API, but it came out of necessity. MediaStore was full of cruft and bloat and was in hindsight a bad idea. I much prefer a more structured way of saving this data in GameMediaCache, and GameMediaCache is very loosely-coupled, I could remove it without breaking API as I had to when deprecating MediaStore.&lt;/p&gt;
+
+&lt;p&gt;Onwards, we&amp;#39;re looking at finalizing the features of the UI and finally putting all this stuff into atom-shell rather than debugging through Chrome. Everything is on track for a July or August developer preview release, and I&amp;#39;m very excited. If there&amp;#39;s time, I hope to get more RetroArch cores wrapped, and a Dolphin wrapper as well, as one of my original goals in Snowflake was to have a nice-looking frontend to Dolphin.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Apr 2015 00:00:00 -0400</pubDate>
+        <link>http://snowflakepowe.red/April%20Progress%20Report/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/April%20Progress%20Report/</guid>
+      </item>
+    
+      <item>
+        <title>Snowflake Developer Roundup - February 2015</title>
+        <description>&lt;p&gt;Since my previous devlog &lt;a href=&quot;http://blog.ronnchyran.com/post/109230804563/snowflake-devlog-2015-1-26-the-home-stretch&quot;&gt;&amp;#39;The Home Stretch&amp;#39;&lt;/a&gt;, I&amp;#39;ve basically implemented most if not all of the base C# API. At this point, most of the behaviour of the backend is finalized, so there&amp;#39;s only a &lt;del&gt;few things to talk about.&lt;/del&gt;&lt;/p&gt;
+
+&lt;h3&gt;New Controller API&lt;/h3&gt;
+
+&lt;p&gt;The new controller API is complete and is a large improvement from what I had before. As described previously, not much has changed except for the fact that Snowflake now stores the input device in it&amp;#39;s port database. I have some simple shims such as &lt;code&gt;KeyboardDevice&lt;/code&gt; and &lt;code&gt;XInputGamepadDevice&lt;/code&gt; for keyboards and XInput gamepads on Windows, but otherwise it&amp;#39;ll store the device name of the input device. I&amp;#39;ve come up with a rather nice solution that abstracts data from udev or DirectInput into the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/blob/master/Snowflake.API/Emulator/Input/InputManager/IInputDevice.cs&quot;&gt;&lt;code&gt;IInputDevice&lt;/code&gt;&lt;/a&gt; class, and a library on each respective platform is called to handle this. Since EmulatorBridge plugins are not expected to be platform-agnostic, they should be able to tell whether they&amp;#39;re running on Linux or Windows and use the information accordingly. I&amp;#39;m actually really excited about this part of Snowflake, and I&amp;#39;ll be doing a type of technical demonstration video on this later.&lt;/p&gt;
+
+&lt;h3&gt;Events&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#39;ve defined and implemented most of the C#-side events in the API. However they&amp;#39;ve yet to be hooked up besides one or two, so while they can be referenced, nothing will actually be called yet. Hooking up the events is pretty trivial and there are other things I want to focus on before I do that however.&lt;/p&gt;
+
+&lt;h3&gt;New IScrapeService&lt;/h3&gt;
+
+&lt;p&gt;Snowflake uses an interface called the &lt;code&gt;IScrapeService&lt;/code&gt; to scrape information about a ROM. How scraping in Snowflake works is pretty simple: a plugin called an &lt;em&gt;identifier&lt;/em&gt; tries to extract information from the ROM file itself, such as by matching the CRC32 to the No-Intro database, or through the ROM headers. Then, it would pass that single piece of information to whatever scraper plugin is marked as &amp;#39;preferred&amp;#39; for that platform. Previously, you would give it a filename, it would run the preferred identifier on it and give that to the preferred scraper. There are a few issues with that; it assumes that the identified information is the game title, and it automatically picks the scraped information given the Levenstein distance from the scraped result title and the identified information. So, if you have a disk ID identifier give something like &lt;code&gt;RSBE01&lt;/code&gt;, that sure as hell doesn&amp;#39;t look like &lt;code&gt;Super Smash Brothers Brawl&lt;/code&gt;. I&amp;#39;ve made some improvements to the IScrapeService to fix these issues.&lt;/p&gt;
+
+&lt;p&gt;Firstly, &lt;em&gt;all&lt;/em&gt; the identifiers that support the ROM&amp;#39;s platform are now called instead of just the one. The information is passed to the scraper in a dictionary with the identifier plugin name as the key. This gives the scraper as much information as it needs, as well as telling the scraper what identifier provided whatever information about a ROM file. The scraper now has access to more information than just one string.&lt;/p&gt;
+
+&lt;p&gt;Secondly, the scraper plugin is now responsible for sorting their results for relevancy. This is pretty simple, just a call to a Levenstein distance algorithm and an &lt;code&gt;OrderBy&lt;/code&gt; is sufficient, but I&amp;#39;ve decided to move this to the plugin-side from the scrape service for reasons that will be apparent below.&lt;/p&gt;
+
+&lt;p&gt;Thirdly, scraping is now a 3 step process that involves the client-side calling the backend C# side. &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/blob/master/Snowflake.API/Service/IScrapeService.cs&quot;&gt;&lt;code&gt;GetGameResults&lt;/code&gt;&lt;/a&gt; will be called given the filename, and it will run and pass on identified information to the scraper. This method will return the &lt;code&gt;IGameScrapeResult&lt;/code&gt; objects to the client-side. Then, the client-side will call &lt;code&gt;GetGameInfo&lt;/code&gt; with the filename and the result id. This will return the &lt;code&gt;GameInfo&lt;/code&gt; object for the game complete with scraped information. At last, the client-side will call &lt;code&gt;AddGame&lt;/code&gt; and add the game to the database. This provides the oppurtunity for the HTML client-side UI to choose which result is the most accurate, or simply pick the first, most relevant, as it has been sorted previously by the plugin.&lt;/p&gt;
+
+&lt;h3&gt;Ajax API&lt;/h3&gt;
+
+&lt;p&gt;There&amp;#39;s been some slight changes to the Ajax API to make it a bit easier to consume. The first is the addition of the &lt;code&gt;Success&lt;/code&gt; parameter, indicating whether a request has succeeded or failed/errored. Instead of returning undefined, a failed request will now return the full exception stack trace as a JSON object, so as to give the client-side some more idea of what went wrong. Lastly, in regards to the API, the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/blob/master/Snowflake.API/Ajax/AjaxMethodParameterAttribute.cs&quot;&gt;&amp;#39;AjaxMethodParameterAttribute`&lt;/a&gt; has been implemented just to provide some metadata to the programmer as to what parameters the ajax method uses. It&amp;#39;s not mandatory, but it&amp;#39;s encouraged. Again, all parameters are consumed with GET; Snowflake does not support POSTing data.&lt;/p&gt;
+
+&lt;h3&gt;StandardAjax&lt;/h3&gt;
+
+&lt;p&gt;On top of the Ajax API, the Snowflake &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake/tree/master/Snowflake.StandardAjax&quot;&gt;&amp;#39;StandardAjax&amp;#39;&lt;/a&gt; library has been mostly implemented with a few exceptions here and there. This replaces the old Ajax.SnowflakeCore plugin, and is used the same way: it exposes GET endpoints for the Ajax HttpClient to control and get information from the C# backend.&lt;/p&gt;
+
+&lt;h3&gt;snowflake.js&lt;/h3&gt;
+
+&lt;p&gt;snowflake.js wraps the StandardAjax API in a bunch of XMLHttpRequest calls and promises. It&amp;#39;s still in it&amp;#39;s early stages, but development will be happening in CoffeeScript (because CoffeeScript keeps me from accidentally setting off a few nukes when trying to get the list of platforms) in the &lt;a href=&quot;https://github.com/SnowflakePowered/snowflake.js&quot;&gt;&amp;#39;snowflake.js repo&amp;#39;&lt;/a&gt;. It uses CommonJS &lt;code&gt;require&lt;/code&gt; internally, which is fine for atom-shell based apps which I will be using, but in a plain browser, I&amp;#39;m using &lt;code&gt;mr&lt;/code&gt; (montage-require) to shim the &lt;code&gt;require&lt;/code&gt; function for testing. You&amp;#39;ll need to run an http server from the root directory for it to work, I suggest node&amp;#39;s http-server module.&lt;/p&gt;
+
+&lt;h3&gt;UI&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#39;m trying to get a basic, unstyled HTML testing UI up as soon as possible so I can show some demonstration videos of what&amp;#39;s possible with snowflake. Otherwise, I&amp;#39;ll pretty much be using Material Design in the form of Polymer&amp;#39;s &lt;code&gt;paper-&lt;/code&gt; elements, and cloning the lakka.tv interface for my big-picture theme. Any designers are welcome to help :)&lt;/p&gt;
+
+&lt;h3&gt;Fure-kun and IRC&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/SnowflakePowered/fure-kun&quot;&gt;Fure-kun&lt;/a&gt; is a side-project-thingy Hubot that gets Travis and Appveyor statuses for Snowflake and can trigger rebuilds. If you&amp;#39;re wondering about the name, the katakana under the Snowflake logo (&amp;#12473;&amp;#12494;&amp;#12540;&amp;#12501;&amp;#12524;&amp;#12540;&amp;#12463;) reads &amp;quot;sun&amp;#333;fur&amp;#275;ku&amp;quot;, ergo, &amp;quot;Fure-kun&amp;quot;. Theres no license up on the repo because I&amp;#39;m too lazy, but if you want the source, treat it as MIT.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Join me on IRC at &lt;code&gt;irc.stormbit.net#snowflake&lt;/code&gt; or &lt;a href=&quot;http://iris.stormbit.net/?channels=#snowflake&quot;&gt;webchat&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Feb 2015 00:00:00 -0500</pubDate>
+        <link>http://snowflakepowe.red/February%20Developer%20Roundup/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/February%20Developer%20Roundup/</guid>
+      </item>
+    
+      <item>
+        <title>Snowflake Developer Roundup - January 2015</title>
+        <description>&lt;p&gt;I tried to save the first devlog of the new year to be when the API is actually finished, but seems like I couldn&amp;#39;t wait until then. Still, we&amp;#39;re thiiiiissss close to having everything complete, or at least booting a ROM, so I&amp;#39;m going to blog about it.&lt;/p&gt;
+
+&lt;h2&gt;Documentation&lt;/h2&gt;
+
+&lt;p&gt;It&amp;#39;s done! Pretty much all the interfaces are documented! Since you should be using the interfaces anyways and not the implementation, I&amp;#39;ve chosen to refrain from documenting nearly everything in &lt;code&gt;Snowflake&lt;/code&gt; and instead put the documentation in the &lt;code&gt;Snowflake.API&lt;/code&gt; assembly. IntelliSense still picks it up properly, as long as you keep your variables to the interface and not the implementation.&lt;/p&gt;
+
+&lt;h2&gt;Plugins&lt;/h2&gt;
+
+&lt;p&gt;The DAT Identifier plugin and the TheGamesDB Scraper plugin have been properly refactored into their own projects without polluting the main solution file. They also build against the base implementation now, and don&amp;#39;t require calling into CoreService.LoadedCore, instead a reference is injected into the constructor when MEF loads it. I might split off the &lt;code&gt;Service&lt;/code&gt; namespace into it&amp;#39;s own assembly later as well, plugins should never have to call into that.&lt;/p&gt;
+
+&lt;h2&gt;RetroArch Bridge&lt;/h2&gt;
+
+&lt;p&gt;It works, kind of, and only with bSNES. It can run a ROM file and compile configuration options just fine. Its still missing things like a fullscreen toggle but I guess we&amp;#39;ll get to that later.&lt;/p&gt;
+
+&lt;h2&gt;Configuration Flags&lt;/h2&gt;
+
+&lt;p&gt;This is kinda messy. SQLite is a poor format for the type of unstructured non-relational, configuration data that flags will have to be, so this will be changed into a simple file store that will load up the flags on request.&lt;/p&gt;
+
+&lt;h2&gt;Controller API&lt;/h2&gt;
+
+&lt;p&gt;While I had a controller API that worked alright, it was really messy and ambiguous. It assumed support for only XInput controllers and a keyboard and the way it coupled the controller, platform, and input device together in one entry was not ideal. I&amp;#39;m in the process of rewriting this API to be more flexible, with the caveat that it now requires a platform-dependent library that has to be called, thankfully this is easy enough to implement across platforms.&lt;/p&gt;
+
+&lt;p&gt;How this new API will work is that the controller ports, and what controllers are available will be defined as part of the platform definition. However, the actual controller definition itself is separate. This decouples the controller layout from the input device. Mappings are now independent-per-input device, and maps to Snowflake&amp;#39;s &lt;code&gt;KeyboardMapping&lt;/code&gt;  and &lt;code&gt;GamepadMapping&lt;/code&gt; abstractions. The device name and ID is stored in the mapping and are no longer stored in a database, instead it&amp;#39;s now a simple json configuration file per controller. The &lt;code&gt;ControllerPortsDatabase&lt;/code&gt; instead of storing which controller definition is &amp;quot;plugged in&amp;quot; to which controller, simply stores which physical input device is plugged in. The emulator plugin can now be certain whether an input device supports which input APIs, and so forth and can generate controller configs accordingly.&lt;/p&gt;
+
+&lt;p&gt;..or so it will work. This is still WIP, with many parts yet to be implemented. So far I&amp;#39;ve split apart the platform definitions and controller definitions, and implemented an interface to get device information across platforms (only Windows at the moment due to my lack of Linux machines)&lt;/p&gt;
+
+&lt;h2&gt;HTML Bootstrap&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve decided to move away from node-webkit (now nw.js), to atom-shell, which GitHub uses for their atom-editor. node-webkit didn&amp;#39;t play along nicely with Polymer and window-context exceptions, which would crash the node context. Atom enforces further separation between the browser javascript and the node javascript. An error that happens in the webpage that normally would be ignored will continue to be ignored.&lt;/p&gt;
+
+&lt;p&gt;The Javascript API will also be rewritten, whatever was originally made of it.&lt;/p&gt;
+
+&lt;h2&gt;Build Services, Linux and Unit Tests&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve spent the past two days getting xunit and AppVeyor to play nicely together, which seems to be working now. Travis-CI builds are now working as well, they&amp;#39;re failing because xunit 2 doesn&amp;#39;t seem to support Mono yet, but the project builds, so there&amp;#39;s that. I&amp;#39;d still like to wait for .NET Core and port it to that but it seems that&amp;#39;s a long way off. At the very least, Snowflake has a test framework set up, so tests can be trivially added and run on CI services. I&amp;#39;ve set up code coverage information to be submitted and tracked on Coveralls.io every AppVeyor build to track Unit Test development progress. Also, something neat I&amp;#39;ve done is to get AppVeyor to generate and make available as an artifact doxygen generated documentation every build, so the corresponding documentation for each build is now available.&lt;/p&gt;
+
+&lt;h2&gt;Stone&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;ve drafted a standard called &lt;a href=&quot;https://github.com/SnowflakePowered/stone&quot;&gt;Stone&lt;/a&gt; that defines the database layout that Snowflake uses as well as consistent platform identifiers. It would be pretty cool if a whole bunch of emulator frontends used the same database schema, but I expect that part of the spec to go the way of &lt;a href=&quot;http://xkcd.com/927/&quot;&gt;xkcd #927&lt;/a&gt; just due to the way different frontends handle things though. Still, Snowflake will be sticking to this schema for the forseeable future.&lt;/p&gt;
+
+&lt;p&gt;However, I am really pushing for the &lt;a href=&quot;https://github.com/SnowflakePowered/stone/blob/master/Stone-platform.md&quot;&gt;standardized, consistent platform identifiers&lt;/a&gt;. Across the whole emulation and retro gaming scene there is no single, agreed-upon way to refer to a certain platform. The NES could be the same as &amp;quot;Nintendo Entertainment System&amp;quot;, or &amp;quot;GoodNES&amp;quot; for the GoodTools romset, or &amp;quot;Famicom&amp;quot; for the Japanese release, which is essentially the same chip. Oddly enough, we have region identifiers that are standardized. &amp;quot;U&amp;quot; means &amp;quot;United States&amp;quot;, &amp;quot;E&amp;quot; means Europe, etc, this is consistent across Redump, No-Intro, GoodTools, etc. On the other hand, I&amp;#39;ve seen the Super Nintendo Entertainment System be referred to as &amp;quot;Super Nintendo (SNES)&amp;quot;. This is fine for humans and all, but its not consistent at all. What I&amp;#39;ve attempted to do is assign consistent IDs for all but the most obscure consoles and this may come across as a little cocky but I really hope that the IDs are adopted, if not Stone-platforms then another set.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Jan 2015 00:00:00 -0500</pubDate>
+        <link>http://snowflakepowe.red/January%20Developer%20Roundup/</link>
+        <guid isPermaLink="true">http://snowflakepowe.red/January%20Developer%20Roundup/</guid>
+      </item>
+    
+  </channel>
+</rss>
