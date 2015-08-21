@@ -14,7 +14,7 @@ body {
 	background: $white;
   font: 18px/1.4 $roboto;
   color: $darkGray;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .container {
@@ -23,7 +23,9 @@ body {
   padding: 0 10px;
   width: 100%;
 }
-
+.jumbotron p {
+  font-weight: 300 !important;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $robotoSlab;
   color: $darkerGray;
