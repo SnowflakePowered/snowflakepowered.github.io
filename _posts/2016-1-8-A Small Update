@@ -1,0 +1,6 @@
+---
+layout: post
+title: A Small Update
+---
+
+These past months have been super busy for me so I haven't had time to write a devlog. Rest assured development is still going on, and there have been a lot of behind-the-scenes changes. I'm prepping a better distribution system that works well with Snowflake's plugin architecture, and I'm hoping to get in about 2 more dev logs until the alpha release. In any case, I'm not dead yet :).
