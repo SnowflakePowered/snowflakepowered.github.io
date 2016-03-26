@@ -52,7 +52,7 @@ ScrapeEngine handles putting all this data together. ROM IDs and internal names,
 
 *But which scraper to choose?*
 
-<del>XBMC</del> <ins>Kori</ins> solves this by having the user choose a scraper beforehand. But games are not TV shows and movies; a source only for MAME games won't work at all when you're trying to find out data for _Super Mario Galaxy_. Likewise, GameTDB is only useful for Wii games and Gamecube games, and won't help at all if you're trying to find data for _Crash Bandicoot_.
+<del>XBMC</del> <ins>Kodi</ins> solves this by having the user choose a scraper beforehand. But games are not TV shows and movies; a source only for MAME games won't work at all when you're trying to find out data for _Super Mario Galaxy_. Likewise, GameTDB is only useful for Wii games and Gamecube games, and won't help at all if you're trying to find data for _Crash Bandicoot_.
 
 Scrapers are already discriminated by which platforms it supports through the plugin-wide `Platforms` property. But some scrapers are more accurate than others, and each one has edge cases where one may beat it out.
 
