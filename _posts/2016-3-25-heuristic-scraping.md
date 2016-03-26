@@ -11,7 +11,7 @@ Scraping has always been a fuzzy and controversial field. Unlike other forms of 
 
 The Old Ways &mdash; Identifiers
 --------------------------------
-Once we have a ROM, how do we find out what game it is? Different games can have the same name, especially multiplatforms, and have different revisions. The obvious way is to simply look it up in a database. This was the though process behind 'Identifiers', which ended up being almost mini-scrapers. Before data was sent to a scraper to get more information with, an identifier plugin would look up data from it's own little database, such as datfiles. Each identifier would put a single piece of information inside a list, and a scraper would have to know which identifiers were installed, and which pieces of data were available. For example:
+Once we have a ROM, how do we find out what game it is? Different games can have the same name, especially multiplatforms, and have different revisions. The obvious way is to simply look it up in a database. This was the thought process behind 'Identifiers', which ended up being almost mini-scrapers. Before data was sent to a scraper to get more information with, an identifier plugin would look up data from it's own little database, such as datfiles. Each identifier would put a single piece of information inside a list, and a scraper would have to know which identifiers were installed, and which pieces of data were available. For example:
 
 *Super Mario Bros 3.nes* could have something like **`rom_crc32 = 0B742B33`**
 
