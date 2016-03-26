@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Feature Preview: Heuristic Scraping
+title: Feature Preview - Heuristic Scraping
 ---
 
 _This is part 1 of a new set of articles going into depth of new features in Snowflake running up to Snowflake API 1.0_
