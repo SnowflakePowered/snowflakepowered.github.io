@@ -38,7 +38,7 @@ Now we have an object that represents all the data from the filename. How do we 
 Every ROM is different &mdash; FileSignatures
 --------------------------------------------
 
-Like snowflakes (pun intended), ROMs often have their own headers or footers that tell the system how to boot them. We could always look up the full CRC32, but this could be extremely time consuming to hash every byte in the ROM. ROM headers also contain additional data, such as an internal name or game ID that can be used to look up in a database for a more accurate check than a hash.
+Like snowflakes (pun intended), ROMs for different platforms are all different, but in similar ways. ROMs often have their own headers or footers that tell the system how to boot them. We could always look up the full CRC32, but this could be extremely time consuming to hash every byte in the ROM. ROM headers also contain additional data, such as an internal name or game ID that can be used to look up in a database for a more accurate check than a hash.
 
 Instead of using a chainsaw like hashing the file, FileSignatures are specialized scapels for every type of ROM. For example, all Wii games have the magic sequence of bytes [`0x5D, 0x1C, 0x9E, 0xA3`](http://wiibrew.org/wiki/Wii_Disc) at position _0x018_. Now it's easy to find out if an ISO is a Wii game, simply [check](https://github.com/SnowflakePowered/snowflake/blob/master/Snowflake.FileSignatures/Nintendo.Wii.FileSignature.cs#L22) if the file has that data. Because FileSignatures are only run for the file extensions they register for, checking specific bytes like this is extremely fast. 
 
