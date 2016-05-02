@@ -19,6 +19,8 @@ Snowflake takes somewhat of a middle ground using a technique called *configurat
 
 Here is a comparison chart of all three approaches to how frontends handle emulators.
 
+{:.table}
+
 |                          | Traditional Frontends                    | Snowflake                                | Core-based Frontends                     |
 | ------------------------ | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
 | **Compatibility**        | Traditional frontends have compatibility with any emulator as long as they take in a ROM name as a command-line parameter. | Each emulator must have an "adapter" plugin in order for Snowflake to understand how to generate configuration and launch the game. | Each emulator must be non-trivially "re-targeted" to the frontend API. As a result, not all emulators can be supported, especially closed-sourced emulators and emulators that are tied to an OS. |
