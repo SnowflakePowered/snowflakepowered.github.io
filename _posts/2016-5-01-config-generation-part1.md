@@ -71,7 +71,7 @@ public double VideoScale { get; set; } = 3;
 
 can be represented like this following mockup: (mess with it!)
 
-<iframe src="http://snowflakepowe.red/demos/config-gen-1.html" frameborder="0" style="width:100%;height:500px;position:static;"> </iframe>
+<iframe src="http://snowflakepowe.red/demos/config-gen-1.html" frameborder="0" style="width:100%;height:450px;position:static;"> </iframe>
 
 
 allowing the interface to easily expose emulator options to the user, and generate valid configuration.
