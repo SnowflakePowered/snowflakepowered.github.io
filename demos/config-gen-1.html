@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Snowflake Configuration Generation</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    <script>
+    'use strict';
+
+$(document).ready(function () {
+  $('select').material_select();
+  rivets.bind($('#menu'), { options: {
+      video_driver: "Direct3D",
+      video_fullscreen: false,
+      video_scale: 3.0
+    } });
+});
+
+rivets.formatters.driverconvert = function (name) {
+  return {
+    "Direct3D": "d3d",
+    "OpenGL": "gl",
+    "Null": "null"
+  }[name];
+};
+</script>
+  </head>
+
+  <body>
+
+    <table id="menu">
+  <thead>
+    <tr>
+      <th data-field="id">Interface</th>
+      <th data-field="name">JSON Representation</th>
+      <th data-field="name">C# Object Representation</th>
+      <th data-field="price">Compiled Configuration</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td style="width:1px;">
+        <div class="item row valign-wrapper" id="video_fullscreen">
+          <div class="col label valign">
+            Enable Fullscreen
+          </div>
+          <div class="switch col">
+            <label>
+      <input type="checkbox" rv-checked="options.video_fullscreen">
+      <span class="lever"></span>
+    </label>
+          </div>
+        </div>
+      </td>
+      <td class="json"><span class="key">"VideoFullscreen"</span><span class="jvalue">{options.video_fullscreen}</span></td>
+      <td class="config"><span class="csharp">bool</span><span class="key">VideoFullscreen</span><span class="csvalue">{options.video_fullscreen}</span></td>
+      <td class="config"><span class="key">video_fullscreen</span><span class="cvalue">{options.video_fullscreen}</span></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="item row valign-wrapper">
+          <div class="col label valign">
+            Video Driver
+          </div>
+
+          <div class="input-field col">
+            <select rv-value="options.video_driver">
+          <option value="OpenGL">OpenGL</option>
+          <option value="Direct3D" selected>Direct3D</option>
+          <option value="Null">No Driver</option>
+        </select>
+          </div>
+        </div>
+      </td>
+      <td class="json"><span class="key">"VideoDriver"</span><span class="jvalue">{options.video_driver}</span></td>
+       <td class="config"><span class="csharp">VideoDriver</span><span class="key">VideoDriver</span><span class="csvalue">VideoDriver.{options.video_driver}</span></td>
+      <td class="config"><span class="key">video_driver</span><span class="cvalue">{options.video_driver | driverconvert}</span></td>
+    </tr>
+    <tr>
+      <td>
+        <div class="item row valign-wrapper" id="video_scale">
+          <div class="col label valign">
+            Window Scale
+          </div>
+
+          <div class="input-field col ">
+            <p class="range-field">
+              <input rv-value="options.video_scale" type="range" min="1" max="10" step="1" value="3" />
+            </p>
+          </div>
+        </div>
+        </div>
+      </td>
+      <td class="json"><span class="key">"VideoScale"</span><span class="jvalue">{options.video_scale}</span></td>
+ <td class="config"><span class="csharp">double</span><span class="key">VideoScale</span><span class="csvalue">{options.video_scale}</span></td>
+      <td class="config"><span class="key">video_scale</span><span class="cvalue">{options.video_scale}</span></td>
+    </tr>
+  </tbody>
+</table>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/rivets/0.8.1/rivets.bundled.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
