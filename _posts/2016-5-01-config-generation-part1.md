@@ -1,12 +1,7 @@
 ---
 layout: post
-title: Feature Preview - On-the-fly Configuration Generation Part 1.
+title: Feature Preview — On-the-fly Configuration Generation Part 1.
 ---
-
-
-
-# Feature Preview — On-the-fly Configuration Generation Part 1.
-
 
 
 This is part 1 of a multi-part series on the concept of "*configuration generation*", Snowflake's solution for integrating with emulators. This article talks about features soon-to-be merged into the main branch, but are not yet available, when the features are merged, this article will be updated accordingly.
