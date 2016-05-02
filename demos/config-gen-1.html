@@ -12,28 +12,6 @@
       .config,.json{font-family:"Roboto Mono"}.section{font-weight:700}td,th{padding:20px 15px}.input-field{margin-top:0}.json{color:red}.json .key:after{color:#00f;content:' :'}.jvalue{color:maroon;padding:10px}.jvalue:before{content:' "'}.jvalue:after{content:'"'}.config{color:red}.config .key:after{content:' = ';color:#00f}.csvalue,.cvalue{color:maroon}.csvalue:after{content:';'}.csharp{color:green}.csharp:after{content:' '}.cvalue:after,.cvalue:before{content:'"'}
     </style>
 
-    
-    
-    <script>
-    'use strict';
-
-$(document).ready(function () {
-  $('select').material_select();
-  rivets.bind($('#menu'), { options: {
-      video_driver: "Direct3D",
-      video_fullscreen: false,
-      video_scale: 3.0
-    } });
-});
-
-rivets.formatters.driverconvert = function (name) {
-  return {
-    "Direct3D": "d3d",
-    "OpenGL": "gl",
-    "Null": "null"
-  }[name];
-};
-</script>
   </head>
 
   <body>
@@ -111,8 +89,10 @@ rivets.formatters.driverconvert = function (name) {
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/rivets/0.8.1/rivets.bundled.min.js'></script>
-
-        <script src="js/index.js"></script>
+ <script>
+    'use strict';
+$(document).ready(function(){$("select").material_select(),rivets.bind($("#menu"),{options:{video_driver:"Direct3D",video_fullscreen:!1,video_scale:3}})}),rivets.formatters.driverconvert=function(e){return{Direct3D:"d3d",OpenGL:"gl",Null:"null"}[e]};
+</script>
 
     
     
