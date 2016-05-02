@@ -360,3 +360,6 @@ li .link-docs:hover {
   color: $blue;
 }
 
+table {
+  @extend .table;
+}
