@@ -204,8 +204,6 @@ img {
   }
 }
 
-
-
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
@@ -358,8 +356,4 @@ li .link-docs:hover {
 
 .footer a:hover {
   color: $blue;
-}
-
-table {
-  @extend .table;
 }
