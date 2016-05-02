@@ -71,9 +71,7 @@ public double VideoScale { get; set; } = 3;
 
 can be represented like this following mockup: (mess with it!)
 
-
-<p data-height="266" data-theme-id="dark" data-slug-hash="bpQgyz" data-default-tab="html,result" data-user="RonnChyran" data-embed-version="2" class="codepen">  </p>
-<script async="async" src="//assets.codepen.io/assets/embed/ei.js"> </script>
+<iframe src="http://snowflakepowe.red/demos/config-gen-1.html" frameborder="0"> </iframe>
 
 
 allowing the interface to easily expose emulator options to the user, and generate valid configuration.
