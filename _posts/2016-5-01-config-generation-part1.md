@@ -4,7 +4,7 @@ title: Feature Preview — On-the-fly Configuration Generation Part 1.
 ---
 
 
-This is part 1 of a multi-part series on the concept of "*configuration generation*", Snowflake's solution for integrating with emulators. This article talks about features soon-to-be merged into the main branch, but are not yet available, when the features are merged, this article will be updated accordingly.
+*This is part 1 of a multi-part series on the concept of "*configuration generation*", Snowflake's solution for integrating with emulators. This article talks about features soon-to-be merged into the main branch, but are not yet available, when the features are merged, this article will be updated accordingly.*
 
 Emulation frontends generally follow one of two approaches. Traditional frontends such as *LaunchBox* or *EmulationStation* among countless others simply launch an emulator executable, passing along command line parameters to the proper position, leaving everything to the actual application that is launched. Core-based frontends, such as *RetroArch* or *OpenEmu* implement a standard API platform that an emulator can target, while the frontend handles rendering, input, and a host of other tasks. Both approaches have their advantages and disadvantages. Traditional frontends have a low-setup cost, but sacrifice control over the emulator. A core-based frontend requires emulators to be specifically rewritten in a certain way to target their API, (usually *libRetro*), and as a result, some emulators are not supported. 
 
