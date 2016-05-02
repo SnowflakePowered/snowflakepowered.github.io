@@ -1,18 +1,23 @@
 
-.highlight { background-color: #ffffcc } /* RIGHT */
+.highlight { 
+    font-family: "Roboto Mono";
+    font-size: 12px;
+} 
 code {
   font-family:'Roboto Mono', 'Bitstream Vera Sans Mono','Courier', monospace;
 }
+
 pre {
-  border: solid 1px #ddd;
   background: #fff;
   padding: 0;
-  line-height: 23px;
-  margin-bottom: 30px;
   white-space: pre;
   overflow-x: auto;
   word-break: inherit;
   word-wrap: inherit;
+}
+
+pre.lineno {
+  background: none; 
 }
 
 .highlight td {
