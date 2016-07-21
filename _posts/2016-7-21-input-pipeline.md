@@ -11,6 +11,18 @@ Unlike your traditional frontend, [Snowflake takes a hybrid approach](http://sno
 
 Handling input is a multifaceted problem that considers physical devices and their use cases, the different ways emulators accept input configuration, how the controller is laid out on the emulated console, as well as special consideration for non-conventional devices such as the Wii Remote and the Nintendo DS Touchscreen. With all this in mind, Snowflake also supports different profiles for every controller, so you can re-map your input method any way you want. Let's explore how all the puzzle pieces fit together into a complex but elegant and powerful solution .
 
+
+## The takeaway — TL;DR
+
+* Snowflake uses the [Stone specification](http://github.com/SnowflakePowered/stone), a database of platform and controller information compiled for general use, not just Snowflake.
+* Using abstractions on top of the physical gamepad device, and a defined layout for an emulated controller, we can map a guest controller/gamepad to a host device in a mostly declarative manner during configuration generation.
+* The system is flexible enough to work for most if not all emulators, and across a wide range of controllers, physical or emulated.
+* Devices must have a plugin that exposes metadata from the OS, and the device layout to Snowflake.
+* Frontend UI can take advantage of the layout format to display more information about both the device layout, and the emulated layout.
+* Supports multiple profiles across multiple combinations of emulated to a physical gamepad. 
+* Drawing the diagram of all this working together is hard...
+
+
 ## Controller Layouts
 
 Internally, Snowflake refers to physical video game controller devices as simply '*devices*', while '*controllers*' refer to the layout of the emulated controller. These such '*controller layouts*' form the basis of Snowflake's input handling. Inspired by libretro's concept of a *RetroPad*, controller layouts are as well an abstraction interface across input devices. 
@@ -73,13 +85,3 @@ As I've mentioned before, Snowflake's input handling has gone through multiple r
 
 For example, the frontend UI could restrict face button mapping to only the face buttons, and allow emulated d-pads to be mapped to directional buttons on a controller. We can also support numeric pads and buttons that aren't part of any standard controller, such as the WonderSwan's flip buttons. Knowing the layout of a user's device opens up so many possibilities for smoother UI integration with emulators. Stone is not the first to come up with this concept, many of the ideas in this document were inspired by how RetroArch handles input across multiple systems. I feel that RetroArch's approach is ill suited for displaying things in a more emulator agnostic way, such that Stone and this input pipeline was written to be even more abstract and high-level than RetroPad. 
 
-
-## The takeaway — TL;DR
-
-* Snowflake uses the [Stone specification](http://github.com/SnowflakePowered/stone), a database of platform and controller information compiled for general use, not just Snowflake.
-* Using abstractions on top of the physical gamepad device, and a defined layout for an emulated controller, we can map a guest controller/gamepad to a host device in a mostly declarative manner during configuration generation.
-* The system is flexible enough to work for most if not all emulators, and across a wide range of controllers, physical or emulated.
-* Devices must have a plugin that exposes metadata from the OS, and the device layout to Snowflake.
-* Frontend UI can take advantage of the layout format to display more information about both the device layout, and the emulated layout.
-* Supports multiple profiles across multiple combinations of emulated to a physical gamepad. 
-* Drawing the diagram of all this working together is hard...
