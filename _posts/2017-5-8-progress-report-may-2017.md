@@ -3,7 +3,7 @@ layout: post
 title: Snowflake Progress Report - May 2017
 ---
 
-It's been nearly a year since the last blog, mostly because I've been quite busy with other obligations that I haven't been able to work with Snowflake all that much. However, the last blog was in May of last year, and while working on a bunch of new features I haven't had time to write about them until now, so this 'progress report' is more of a recap of the last half-year of features. IBecause these changes were more under-the-hood, this article will be more of a devlog than a feature preview, and will be talking about the more technical details on how Snowflake is being built.
+It's been nearly a year since the last blog, mostly because I've been quite busy with other obligations that I haven't been able to work with Snowflake all that much. However, the last blog was in May of last year, and while working on a bunch of new features I haven't had time to write about them until now, so this 'progress report' is more of a recap of the last half-year of features. Because these changes were more under-the-hood, this article will be more of a devlog than a feature preview, and will be talking about the more technical details on how Snowflake is being built.
 
 **If you know how to inject an overlay CEF on top of an arbitrary OpenGL/DirectX surface like the Steam Overlay, [please let me know!](https://github.com/SnowflakePowered/snowflake/issues/235)**
 
