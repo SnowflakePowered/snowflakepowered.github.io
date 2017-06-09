@@ -7,7 +7,7 @@ title: 'Introducing Stone: A database for game consoles and their controllers.'
 
 When I first started writing Snowflake, one of the things I was concerned with was how to refer internally to different game consoles. This wasn't an issue exclusive to Snowflake; databases like TheGamesDB and OpenVGDB all have different identifiers for different consoles. 
 
-[Stone](https://stone.snowflakepowe.red/#/) originally started out as a more normalised way to identify individual consoles. I wasn't happy with numeric, "black-box" identifiers (the NES is platform #`21` according to the GiantBomb API, but `25` when it comes to OpenVGDB), or human readable, but hard to parse strings like how TheGamesDB likes to use, `Nintendo Entertainment System (NES)`. 
+[Stone](https://stone.snowflakepowe.red/#/) originally started out as a more normalised way to identify individual consoles. I wasn't happy with numeric, "black-box" identifiers (the NES is platform #`21` according to the GiantBomb API!), or human readable, but hard to parse strings like how TheGamesDB likes to use, `Nintendo Entertainment System (NES)`. OpenVGDB does have "OEID"s like `openemu.system.psx`, but they aren't use anywhere else in the database, preferring to use the numeric system ID internally instead (`38` for the Playstation).
 
 If I were to use a new set of identifiers, they would have to be 
 
