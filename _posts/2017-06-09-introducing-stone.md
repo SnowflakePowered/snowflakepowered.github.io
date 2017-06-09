@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Stone: A database for game console and their controllers.
+title: 'Introducing Stone: A database for game console and their controllers.'
 ---
 
 [![Stone](https://stone.snowflakepowe.red/static/media/fulllogo.5429c7b6.svg)](https://stone.snowflakepowe.red/#/)
